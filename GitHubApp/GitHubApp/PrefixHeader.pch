@@ -1,0 +1,273 @@
+//
+//  PrefixHeader.pch
+//  GitHubApp
+//
+//  Created by eillyer on 2018/10/22.
+//  Copyright © 2018年 eillyer. All rights reserved.
+//
+
+//
+//  PrefixHeader.pch
+//  TheCocoapodsAll
+//
+//  Created by eillyer on 2018/1/19.
+//  Copyright © 2018年 eillyer. All rights reserved.
+//
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//视图类
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+//iphone-X适配纯代码用
+#define SafeAreaTopHeight     (IphoneStatusBarHeight > 20.0 ? 88 : 64)
+#define SafeAreaBottomHeight  (IphoneStatusBarHeight > 20.0 ? 34 : 0)
+#define IphoneStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define IphoneScreenOriginY   (IphoneStatusBarHeight > 20.0 ? 44 : 0)
+
+
+#define kFWColorGreen [UIColor colorWithRed:25/255.0 green:180.0/255 blue:145.0/255 alpha:1]
+#define kFWColorgran [UIColor colorWithRed:182/255.0 green:182.0/255 blue:182.0/255 alpha:1]
+#define kFWColorErweima [UIColor greenColor]//二维码边角颜色
+
+#define kSaveBtnFrame CGRectMake(0, 0, 70, 35)
+#define kTimeVideo 10//视频录制时间
+#define kImageNum 6
+
+//下拉和上拉的文字描述
+#define kMJRefreshNameUp @"下拉刷新数据↓"
+#define kMJRefreshNameDown @"点击加载更多"
+#define kMJRefreshNameWait @"加载中..."
+#define kMJRefreshNameNOData @"没有更多数据"
+#define kMJRefreshNameReadly @"准备加载数据"
+
+// 颜色
+// 颜色
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define kRGB(r, g, b) RGBA(r, g, b,1.0)
+#define kColorHex(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+//地图
+#define kMapZoom 8.345
+#define kMapID @"2fe4409477d9cf0703f5b2a1092a8f0d"
+
+#define kSoundName @"ReceivedMessage"
+
+#define kAlertTime 1.0
+
+
+#import "UIImage+image.h"
+#import "UIView+layerView.h"
+#import "NSString+NowDate.h"
+#import "NetWorkTo.h"
+#import "AppControl.h"
+
+
+#define kBannerArr @[@"banner2a",@"banner1a",@"banner3a",@"banner4a"]
+
+
+//通用宏定义
+
+#ifndef define_h
+
+#define define_h
+
+//获取系统对象
+
+#define kApplication [UIApplication sharedApplication]
+
+#define kAppWindow [UIApplication sharedApplication].delegate.window
+
+#define kAppDelegate [AppDelegate shareAppDelegate]
+
+#define kRootViewController [UIApplication sharedApplication].delegate.window.rootViewController
+
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
+
+//获取屏幕宽高
+
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+
+#define Iphone6ScaleWidth KScreenWidth/375.0
+
+#define Iphone6ScaleHeight KScreenHeight/667.0
+
+//根据ip6的屏幕来拉伸
+
+#define kRealValue(with) ((with)*(KScreenWidth/375.0f))
+
+//强弱引用
+
+#define kWeakSelf(type) __weak typeof(type)weak##type = type;
+
+#define kStrongSelf(type) __strong typeof(type)type = weak##type;
+
+
+//property属性快速声明
+
+#define kPropertyString(s) @property(nonatomic,copy)NSString * s
+
+#define kPropertyNSInteger(s) @property(nonatomic,assign)NSIntegers
+
+#define kPropertyFloat(s) @property(nonatomic,assign)floats
+
+#define kPropertyLongLong(s) @property(nonatomic,assign)long long s
+
+#define kPropertyNSMutableDictionary(s) @property(nonatomic,strong)NSMutableDictionary * s
+
+#define kPropertyNSArray(s) @property(nonatomic,strong)NSArray * s
+
+#define kPropertyNSMutableArray(s) @property(nonatomic,strong)NSMutableArray * s
+
+///IOS版本判断
+
+#define IOSAVAILABLEVERSION(version) ([[UIDevice currentDevice]availableVersion:version]< 0)
+
+//当前系统版本
+
+#define CurrentSystemVersion [[UIDevice currentDevice].systemVersion doubleValue]
+
+//-------------------打印日志-------------------------
+
+//DEBUG模式下打印日志,当前行
+//如果release状态就不执行NSLog函数
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...) {}
+#endif
+
+#endif /* PrefixHeader_pch */
+
+
+#ifdef DEBUG
+
+#define DLog(fmt,...) NSLog((@"%s[Line %d]" fmt),__PRETTY_FUNCTION__,__LINE__,##__VA_ARGS__);
+
+#else
+
+#define DLog(...)
+
+#endif
+
+//拼接字符串
+
+#define kNSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+
+//颜色
+#define kMainColor [UIColor whiteColor]
+
+#define kTextColor [UIColor whiteColor]
+
+#define kLineColor [UIColor whiteColor]
+
+#define kClearColor [UIColor clearColor]
+
+#define kWhiteColor [UIColor whiteColor]
+
+#define kBlackColor [UIColor blackColor]
+
+#define kGrayColor [UIColor grayColor]
+
+#define kGray2Color [UIColor lightGrayColor]
+
+#define kBlueColor [UIColor blueColor]
+
+#define kRedColor [UIColor redColor]
+
+#define kTableColor [UIColor groupTableViewBackgroundColor]
+
+
+
+
+//字体
+
+#define kFontBoldSize(FONTSIZE) [UIFont boldSystemFontOfSize:FONTSIZE]
+
+#define kFontSize(FONTSIZE) [UIFont systemFontOfSize:FONTSIZE]
+
+#define kFont(NAME,FONTSIZE) [UIFont fontWithName:(NAME)size:(FONTSIZE)]
+
+//定义UIImage对象
+
+#define kImageWithFile(_pointer) [UIImage imageWithContentsOfFile:([[NSBundle mainBundle]pathForResource:[NSString stringWithFormat:@"%@@%dx",_pointer,(int)[UIScreen mainScreen].nativeScale]ofType:@"png"])]
+
+#define kImageName(name) [UIImage imageNamed:name]
+
+//数据验证
+
+#define kStrValid(f) (f!=nil &&[f isKindOfClass:[NSString class]]&& ![f isEqualToString:@""])
+
+#define kSafeStr(f) (StrValid(f)?f:@"")
+
+#define kHasString(str,eky) ([str rangeOfString:key].location!=NSNotFound)
+
+#define kValidStr(f) StrValid(f)
+
+#define kValidDict(f) (f!=nil &&[f isKindOfClass:[NSDictionary class]])
+
+#define kValidArray(f) (f!=nil &&[f isKindOfClass:[NSArray class]]&&[f count]>0)
+
+#define kValidNum(f) (f!=nil &&[f isKindOfClass:[NSNumber class]])
+
+#define kValidClass(f,cls) (f!=nil &&[f isKindOfClass:[cls class]])
+
+#define kValidData(f) (f!=nil &&[f isKindOfClass:[NSData class]])
+
+//获取一段时间间隔
+
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+
+#define kEndTimeNSLog (@"Time: %f",CFAbsoluteTimeGetCurrent()- start)
+
+//打印当前方法名
+
+#define ITTDPRINTMETHODNAME() ITTDPRINT(@"%s",__PRETTY_FUNCTION__)
+
+//GCD
+
+#define kDISPATCH_ASYNC_BLOCK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),block)
+
+#define kDISPATCH_MAIN_BLOCK(block) dispatch_async(dispatch_get_main_queue(),block)
+
+//GCD -一次性执行
+
+#define kDISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken;dispatch_once(&onceToken,onceBlock);
+
+
+//懒加载
+//数组
+#define KLanMArr(name,object)\
+- (NSMutableArray *)name{\
+if (!object) {\
+object = [NSMutableArray new];\
+}\
+return object;\
+}\
+//字典
+#define KLanMDict(name,object)\
+- (NSMutableDictionary *)name{\
+if (!object) {\
+object = [NSMutableDictionary new];\
+}\
+return object;\
+}\
+
+
+
+
+
+#endif /* define_h */
+
+
+

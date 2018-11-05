@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SendCodeBtn">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获取验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPq-hl-ec7">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="128"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zt4-Qy-wlm">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="128"/>
+                    <connections>
+                        <action selector="send:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bsp-Ef-HXe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zt4-Qy-wlm" secondAttribute="trailing" id="366-KH-l4U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NPq-hl-ec7" secondAttribute="trailing" id="FuH-OI-Ir9"/>
+                <constraint firstItem="zt4-Qy-wlm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Gvc-A1-Bag"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zt4-Qy-wlm" secondAttribute="bottom" id="HZ5-So-h96"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NPq-hl-ec7" secondAttribute="bottom" id="Xqb-gD-YY9"/>
+                <constraint firstItem="NPq-hl-ec7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fK7-Ek-Xia"/>
+                <constraint firstItem="NPq-hl-ec7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lZq-2y-Nz6"/>
+                <constraint firstItem="zt4-Qy-wlm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nPq-gr-d6F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn" destination="zt4-Qy-wlm" id="s9b-NS-Pbb"/>
+                <outlet property="text" destination="NPq-hl-ec7" id="mfe-EF-DNb"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="-196"/>
+        </view>
+    </objects>
+</document>
