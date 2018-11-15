@@ -255,15 +255,11 @@
     CGSize size = CGSizeMake(MAXFLOAT, MAXFLOAT);
     if (self.text.length > 0) {
 #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000
-        if (@available(iOS 7.0, *)) {
-            stringWidth =[self.text
-                          boundingRectWithSize:size
-                          options:NSStringDrawingUsesLineFragmentOrigin
-                          attributes:@{NSFontAttributeName:self.font}
-                          context:nil].size.width;
-        } else {
-            // Fallback on earlier versions
-        }
+        stringWidth =[self.text
+                      boundingRectWithSize:size
+                      options:NSStringDrawingUsesLineFragmentOrigin
+                      attributes:@{NSFontAttributeName:self.font}
+                      context:nil].size.width;
 #else
         
         stringWidth = [self.text sizeWithFont:self.font

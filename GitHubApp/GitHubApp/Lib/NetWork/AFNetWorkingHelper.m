@@ -13,10 +13,10 @@
 
 //#import "NSString+NowDate.h"
 //#import "UIImage+image.h"
-
+//
 #define kProgressViewColor [UIColor redColor]
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+//#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+//#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface AFNetWorkingHelper ()
 @property (nonatomic,strong) AFHTTPSessionManager *sessionManager;// 管理请求

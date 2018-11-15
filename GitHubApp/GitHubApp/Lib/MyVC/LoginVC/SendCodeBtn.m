@@ -56,7 +56,7 @@
 
 - (void)loopTime{
     self.tempTime -= 1;
-    if (self.tempTime <= 0) {
+    if (self.tempTime < 1) {
         self.tempTime = self.allTime;
         [self.timer invalidate];
         self.timer = nil;
