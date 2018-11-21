@@ -35,6 +35,7 @@ typedef void(^SendCodeBtnBlack)(void);
            inView:(UIView *)inView;
 
 
+
 /**
  重置
  */
@@ -46,7 +47,8 @@ typedef void(^SendCodeBtnBlack)(void);
  
     SendCodeBtn *btn = [SendCodeBtn CustomView];
     [btn startTime:20 BGViewColor:kRedColor textColor:kWhiteColor Frame:CGRectMake(50, 50, 100, 50) inView:self.view];
- 
+    __weak typeof (btn) weakbtn = btn;
+
     btn.SendCodeBtnBlack = ^{
         DLog(@"111111");
  
