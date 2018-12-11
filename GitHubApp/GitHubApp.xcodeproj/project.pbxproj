@@ -510,21 +510,21 @@
 		BB142119219D4B3700F02378 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				BB14211A219D4B3700F02378 /* NSString+NowDate.m */,
-				BB14211B219D4B3700F02378 /* UIView+layerView.h */,
-				BB14211C219D4B3700F02378 /* UIColor+color.m */,
-				BB14211D219D4B3700F02378 /* NSString+extension.h */,
-				BB14211E219D4B3700F02378 /* NSArray+array.h */,
-				BB14211F219D4B3700F02378 /* NSString+Pinyin.m */,
-				BB142120219D4B3700F02378 /* NSDictionary+dictJson.h */,
-				BB142121219D4B3700F02378 /* UIImage+image.m */,
-				BB142122219D4B3700F02378 /* UIView+layerView.m */,
 				BB142123219D4B3700F02378 /* NSString+NowDate.h */,
-				BB142124219D4B3700F02378 /* NSString+extension.m */,
-				BB142125219D4B3700F02378 /* UIColor+color.h */,
+				BB14211A219D4B3700F02378 /* NSString+NowDate.m */,
 				BB142126219D4B3700F02378 /* UIImage+image.h */,
-				BB142127219D4B3700F02378 /* NSDictionary+dictJson.m */,
+				BB142121219D4B3700F02378 /* UIImage+image.m */,
+				BB142125219D4B3700F02378 /* UIColor+color.h */,
+				BB14211C219D4B3700F02378 /* UIColor+color.m */,
 				BB142128219D4B3700F02378 /* NSString+Pinyin.h */,
+				BB14211F219D4B3700F02378 /* NSString+Pinyin.m */,
+				BB14211B219D4B3700F02378 /* UIView+layerView.h */,
+				BB142122219D4B3700F02378 /* UIView+layerView.m */,
+				BB14211D219D4B3700F02378 /* NSString+extension.h */,
+				BB142124219D4B3700F02378 /* NSString+extension.m */,
+				BB142120219D4B3700F02378 /* NSDictionary+dictJson.h */,
+				BB142127219D4B3700F02378 /* NSDictionary+dictJson.m */,
+				BB14211E219D4B3700F02378 /* NSArray+array.h */,
 				BB142129219D4B3700F02378 /* NSArray+array.m */,
 			);
 			path = Category;
@@ -873,15 +873,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GitHubApp-checkManifestLockResult.txt",
 			);
@@ -895,8 +891,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GitHubApp/Pods-GitHubApp-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
@@ -904,8 +898,6 @@
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",

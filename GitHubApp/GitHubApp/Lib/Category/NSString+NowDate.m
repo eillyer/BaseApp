@@ -57,6 +57,10 @@
 - (NSString *)removeNullStrFor:(NSString *)toStr{
     NSString *str = [NSString stringWithFormat:@"%@", self];
     
+    if ([str containsString:@"null"] || [str containsString:@"nil"]) {
+        str = @" ";
+    }
+    
     return str.length?str:toStr;
 }
 

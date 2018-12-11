@@ -89,5 +89,12 @@ typedef NS_ENUM(NSInteger,BaseAlertViewAnimetionType) {
  */
 - (void)ToShowAlertType:(BaseAlertViewAnimetionType)type;
 
-
+/**
+ 给view添加虚线
+ 
+ @param Long 虚线的总长
+ @param wid 虚线的间距
+ @param color 虚线颜色
+ */
+- (void)addBorderToLayerLong:(NSNumber *)Long wid:(NSNumber *)wid color:(UIColor *)color;
 @end

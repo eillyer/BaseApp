@@ -9,6 +9,7 @@
 #import "aaa.h"
 #import "SendCodeBtn.h"
 
+#import "NetWorkTo.h"
 @interface aaa ()
 
 @end
@@ -18,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [NetWorkTo toUserLogout:self phone:@"133333333" Success:^(NSDictionary *dict) {
+        
+    } error:^(NSString *error) {
+        
+    }];
     
     EillyerBaseFlowLayout *flowLayout = [[EillyerBaseFlowLayout alloc] initWithCount:3 width:kScreenWidth-20 height:130 isH:NO];
     [self.collectionView setCollectionViewLayout:flowLayout];

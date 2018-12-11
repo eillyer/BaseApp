@@ -229,6 +229,35 @@
 }
 
 
+- (void)addBorderToLayerLong:(NSNumber *)Long wid:(NSNumber *)wid color:(UIColor *)color
+{
+    CAShapeLayer *border = [CAShapeLayer layer];
+    //  线条颜色
+    border.strokeColor = color.CGColor;
+    
+    border.fillColor = nil;
+    
+    
+    UIBezierPath *pat = [UIBezierPath bezierPath];
+    [pat moveToPoint:CGPointMake(0, 0)];
+    if (CGRectGetWidth(self.frame) > CGRectGetHeight(self.frame)) {
+        [pat addLineToPoint:CGPointMake(self.bounds.size.width, 0)];
+    }else{
+        [pat addLineToPoint:CGPointMake(0, self.bounds.size.height)];
+    }
+    border.path = pat.CGPath;
+    
+    border.frame = self.bounds;
+    
+    // 不要设太大 不然看不出效果
+    border.lineWidth = 0.5;
+    border.lineCap = @"butt";
+    
+    //  第一个是 线条长度   第二个是间距    nil时为实线
+    border.lineDashPattern = @[Long, wid];
+    
+    [self.layer addSublayer:border];
+}
 
 
 
