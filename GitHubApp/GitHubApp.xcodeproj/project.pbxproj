@@ -1135,7 +1135,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GitHubApp/Lib/BaseObject/PayManager/aliPay",
 				);
-				GCC_PREFIX_HEADER = GitHubApp/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GitHubApp/PrefixHeader.pch";
 				INFOPLIST_FILE = GitHubApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1162,7 +1162,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GitHubApp/Lib/BaseObject/PayManager/aliPay",
 				);
-				GCC_PREFIX_HEADER = GitHubApp/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GitHubApp/PrefixHeader.pch";
 				INFOPLIST_FILE = GitHubApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
