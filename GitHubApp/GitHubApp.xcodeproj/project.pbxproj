@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		40BFC771F33B73D1C0CFDC37 /* libPods-GitHubApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB646E48CCE71C5502F96F7 /* libPods-GitHubApp.a */; };
+		52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08C21C1038000DECCB3 /* FlipTableView.m */; };
+		52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08F21C1038000DECCB3 /* SegmentTapView.m */; };
 		BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C3219D4A8700F02378 /* AppDelegate.m */; };
 		BB1420C7219D4A8700F02378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C6219D4A8700F02378 /* ViewController.m */; };
 		BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1420C8219D4A8700F02378 /* Main.storyboard */; };
@@ -122,6 +124,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52B8F08B21C1038000DECCB3 /* FlipTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTableView.h; sourceTree = "<group>"; };
+		52B8F08C21C1038000DECCB3 /* FlipTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTableView.m; sourceTree = "<group>"; };
+		52B8F08E21C1038000DECCB3 /* SegmentTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTapView.h; sourceTree = "<group>"; };
+		52B8F08F21C1038000DECCB3 /* SegmentTapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentTapView.m; sourceTree = "<group>"; };
+		52B8F09221C103BE00DECCB3 /* ReadMeTitleChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMeTitleChange.h; sourceTree = "<group>"; };
 		8B2C2B8D3DB0DE9A57B80617 /* Pods-GitHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.release.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.release.xcconfig"; sourceTree = "<group>"; };
 		8CBB2015463C6AF7CB1AA649 /* Pods-GitHubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.debug.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1420BF219D4A8700F02378 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +349,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52B8F08921C1034D00DECCB3 /* TitleChange */ = {
+			isa = PBXGroup;
+			children = (
+				52B8F09221C103BE00DECCB3 /* ReadMeTitleChange.h */,
+				52B8F08A21C1038000DECCB3 /* FlipTableView */,
+				52B8F08D21C1038000DECCB3 /* SegementTap */,
+			);
+			path = TitleChange;
+			sourceTree = "<group>";
+		};
+		52B8F08A21C1038000DECCB3 /* FlipTableView */ = {
+			isa = PBXGroup;
+			children = (
+				52B8F08B21C1038000DECCB3 /* FlipTableView.h */,
+				52B8F08C21C1038000DECCB3 /* FlipTableView.m */,
+			);
+			path = FlipTableView;
+			sourceTree = "<group>";
+		};
+		52B8F08D21C1038000DECCB3 /* SegementTap */ = {
+			isa = PBXGroup;
+			children = (
+				52B8F08E21C1038000DECCB3 /* SegmentTapView.h */,
+				52B8F08F21C1038000DECCB3 /* SegmentTapView.m */,
+			);
+			path = SegementTap;
+			sourceTree = "<group>";
+		};
 		BB1420B6219D4A8700F02378 = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +568,7 @@
 		BB14212A219D4B3700F02378 /* BaseObject */ = {
 			isa = PBXGroup;
 			children = (
+				52B8F08921C1034D00DECCB3 /* TitleChange */,
 				BB1421E6219D4E6B00F02378 /* PayManager */,
 				BB14212B219D4B3700F02378 /* TableView */,
 				BB142132219D4B3700F02378 /* BaseAlertView */,
@@ -945,6 +981,7 @@
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,
 				BB14220E219D4E6B00F02378 /* PayManager.m in Sources */,
 				BB1421A2219D4B3800F02378 /* AddImageAndMp4VC.m in Sources */,
+				52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */,
 				BB1421D5219D4B3800F02378 /* ZHDatePickerView.m in Sources */,
 				BB1421AA219D4B3800F02378 /* NSArray+array.m in Sources */,
 				BB14218F219D4B3800F02378 /* ImageAndMovEditCellLayout.m in Sources */,
@@ -969,6 +1006,7 @@
 				BB1421E1219D4CF100F02378 /* MMMM.m in Sources */,
 				BB1421BD219D4B3800F02378 /* EillyerTextField.m in Sources */,
 				BB142189219D4B3800F02378 /* RegisterUserVC.m in Sources */,
+				52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */,
 				BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */,
 				BB1421B4219D4B3800F02378 /* ShareBtn.m in Sources */,
 			);
