@@ -139,6 +139,8 @@
 }
 - (void)animationWithShake{
     CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+//    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];//大小的改变
+
     rotateAnimation.fromValue = [NSNumber numberWithFloat:-0.05 * M_PI];
     rotateAnimation.toValue = [NSNumber numberWithFloat:0.05 * M_PI];
     rotateAnimation.autoreverses = YES;
