@@ -80,6 +80,7 @@ typedef NS_ENUM(NSInteger,BaseAlertViewAnimetionType) {
 
 //让view左右晃动
 - (void)worningShake;
+- (void)animationWithShake;//摇头动画
 
 
 /**

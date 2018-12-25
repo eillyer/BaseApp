@@ -137,7 +137,17 @@
     
     [self.layer addAnimation:kfa forKey:@"shake"];
 }
-
+- (void)animationWithShake{
+    CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotateAnimation.fromValue = [NSNumber numberWithFloat:-0.05 * M_PI];
+    rotateAnimation.toValue = [NSNumber numberWithFloat:0.05 * M_PI];
+    rotateAnimation.autoreverses = YES;
+    rotateAnimation.fillMode = kCAFillModeForwards;
+    rotateAnimation.repeatCount = MAXFLOAT;
+    rotateAnimation.duration = 0.3;
+    //开演
+    [self.layer addAnimation:rotateAnimation forKey:@"rotateAnimation"];
+}
 - (void)setYinyingColor:(UIColor *)color alpha:(CGFloat)alpha offsetX:(CGFloat)x Y:(CGFloat)y radius:(CGFloat)radius{
     self.layer.shadowColor = color.CGColor;//设置阴影的颜色
 
