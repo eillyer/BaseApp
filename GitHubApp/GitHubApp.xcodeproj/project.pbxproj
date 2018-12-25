@@ -11,6 +11,7 @@
 		5293765421D0C0F200174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293764F21D0C0F200174317 /* DateAlertView.m */; };
 		5293765521D0C0F200174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293765121D0C0F200174317 /* DateAlertView.xib */; };
 		5293765621D0C0F200174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293765221D0C0F200174317 /* DatePickerView.m */; };
+		5293766A21D220D900174317 /* MyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293766921D220D900174317 /* MyAnimation.m */; };
 		52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08C21C1038000DECCB3 /* FlipTableView.m */; };
 		52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08F21C1038000DECCB3 /* SegmentTapView.m */; };
 		BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C3219D4A8700F02378 /* AppDelegate.m */; };
@@ -132,6 +133,8 @@
 		5293765121D0C0F200174317 /* DateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAlertView.xib; sourceTree = "<group>"; };
 		5293765221D0C0F200174317 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
 		5293765321D0C0F200174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
+		5293766821D220D900174317 /* MyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimation.h; sourceTree = "<group>"; };
+		5293766921D220D900174317 /* MyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimation.m; sourceTree = "<group>"; };
 		52B8F08B21C1038000DECCB3 /* FlipTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTableView.h; sourceTree = "<group>"; };
 		52B8F08C21C1038000DECCB3 /* FlipTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTableView.m; sourceTree = "<group>"; };
 		52B8F08E21C1038000DECCB3 /* SegmentTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTapView.h; sourceTree = "<group>"; };
@@ -582,6 +585,8 @@
 				BB142127219D4B3700F02378 /* NSDictionary+dictJson.m */,
 				BB14211E219D4B3700F02378 /* NSArray+array.h */,
 				BB142129219D4B3700F02378 /* NSArray+array.m */,
+				5293766821D220D900174317 /* MyAnimation.h */,
+				5293766921D220D900174317 /* MyAnimation.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1000,6 +1005,7 @@
 				BB1421D1219D4B3800F02378 /* AFNetWorkingHelper.m in Sources */,
 				BB1421B6219D4B3800F02378 /* EillyerBaseTabBarController.m in Sources */,
 				BB1420D2219D4A8900F02378 /* main.m in Sources */,
+				5293766A21D220D900174317 /* MyAnimation.m in Sources */,
 				BB1421AB219D4B3800F02378 /* EillyerTableCell.m in Sources */,
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,
 				BB14220E219D4E6B00F02378 /* PayManager.m in Sources */,
