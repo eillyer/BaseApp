@@ -364,10 +364,10 @@
 			isa = PBXGroup;
 			children = (
 				529376BB21D36B1100174317 /* DateAlertView.m */,
-				529376BC21D36B1100174317 /* DatePickerView.h */,
-				529376BD21D36B1100174317 /* DateAlertView.xib */,
-				529376BE21D36B1100174317 /* DatePickerView.m */,
 				529376BF21D36B1100174317 /* DateAlertView.h */,
+				529376BD21D36B1100174317 /* DateAlertView.xib */,
+				529376BC21D36B1100174317 /* DatePickerView.h */,
+				529376BE21D36B1100174317 /* DatePickerView.m */,
 			);
 			path = dataSelect;
 			sourceTree = "<group>";
@@ -481,17 +481,17 @@
 			isa = PBXGroup;
 			children = (
 				BB1420EA219D4B3700F02378 /* SendCodeBtn.h */,
-				BB1420EB219D4B3700F02378 /* LoginVC.m */,
-				BB1420EC219D4B3700F02378 /* RegisterUserVC.h */,
-				BB1420ED219D4B3700F02378 /* ForgetPasswordVC.h */,
-				BB1420EE219D4B3700F02378 /* RegisterUserVC.xib */,
-				BB1420EF219D4B3700F02378 /* ForgetPasswordVC.m */,
-				BB1420F0219D4B3700F02378 /* RegisterUserVC.m */,
-				BB1420F1219D4B3700F02378 /* LoginVC.h */,
 				BB1420F2219D4B3700F02378 /* SendCodeBtn.m */,
-				BB1420F3219D4B3700F02378 /* ForgetPasswordVC.xib */,
-				BB1420F4219D4B3700F02378 /* LoginVC.xib */,
 				BB1420F5219D4B3700F02378 /* SendCodeBtn.xib */,
+				BB1420ED219D4B3700F02378 /* ForgetPasswordVC.h */,
+				BB1420EF219D4B3700F02378 /* ForgetPasswordVC.m */,
+				BB1420F3219D4B3700F02378 /* ForgetPasswordVC.xib */,
+				BB1420EC219D4B3700F02378 /* RegisterUserVC.h */,
+				BB1420F0219D4B3700F02378 /* RegisterUserVC.m */,
+				BB1420EE219D4B3700F02378 /* RegisterUserVC.xib */,
+				BB1420F1219D4B3700F02378 /* LoginVC.h */,
+				BB1420EB219D4B3700F02378 /* LoginVC.m */,
+				BB1420F4219D4B3700F02378 /* LoginVC.xib */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -500,8 +500,8 @@
 			isa = PBXGroup;
 			children = (
 				BB1420F7219D4B3700F02378 /* AddImageAndMp4VC.h */,
-				BB1420F8219D4B3700F02378 /* 主文件 */,
 				BB142118219D4B3700F02378 /* AddImageAndMp4VC.m */,
+				BB1420F8219D4B3700F02378 /* 主文件 */,
 			);
 			path = AddImageAndMP4;
 			sourceTree = "<group>";
@@ -509,21 +509,21 @@
 		BB1420F8219D4B3700F02378 /* 主文件 */ = {
 			isa = PBXGroup;
 			children = (
+				BB142103219D4B3700F02378 /* playBtn.png */,
 				BB1420F9219D4B3700F02378 /* add@2x.png */,
-				BB1420FA219D4B3700F02378 /* ImageAndMovEditCellLayout.m */,
 				BB1420FB219D4B3700F02378 /* add@3x.png */,
+				BB142102219D4B3700F02378 /* ImageAndMovEditCell.h */,
 				BB1420FC219D4B3700F02378 /* ImageAndMovEditCell.m */,
 				BB1420FD219D4B3700F02378 /* ImageAndMovEditCell.xib */,
+				BB142104219D4B3700F02378 /* ImageAndMovEditVC.h */,
 				BB1420FE219D4B3700F02378 /* ImageAndMovEditVC.m */,
 				BB1420FF219D4B3700F02378 /* CameraAlertController.h */,
-				BB142100219D4B3700F02378 /* AVURLAsset+SetMp4.m */,
-				BB142101219D4B3700F02378 /* ImageAndMovEditCellLayout.h */,
-				BB142102219D4B3700F02378 /* ImageAndMovEditCell.h */,
-				BB142103219D4B3700F02378 /* playBtn.png */,
-				BB142104219D4B3700F02378 /* ImageAndMovEditVC.h */,
-				BB142105219D4B3700F02378 /* AVURLAsset+SetMp4.h */,
-				BB142106219D4B3700F02378 /* Player */,
 				BB142117219D4B3700F02378 /* CameraAlertController.m */,
+				BB142101219D4B3700F02378 /* ImageAndMovEditCellLayout.h */,
+				BB1420FA219D4B3700F02378 /* ImageAndMovEditCellLayout.m */,
+				BB142105219D4B3700F02378 /* AVURLAsset+SetMp4.h */,
+				BB142100219D4B3700F02378 /* AVURLAsset+SetMp4.m */,
+				BB142106219D4B3700F02378 /* Player */,
 			);
 			path = "主文件";
 			sourceTree = "<group>";
@@ -554,13 +554,13 @@
 		BB14210F219D4B3700F02378 /* media */ = {
 			isa = PBXGroup;
 			children = (
-				BB142110219D4B3700F02378 /* MediaPlayerVC.xib */,
 				BB142111219D4B3700F02378 /* MediaPlayerVC.h */,
-				BB142112219D4B3700F02378 /* XSMediaPlayerMaskView.m */,
-				BB142113219D4B3700F02378 /* XSMediaPlayer.h */,
 				BB142114219D4B3700F02378 /* MediaPlayerVC.m */,
-				BB142115219D4B3700F02378 /* XSMediaPlayerMaskView.h */,
+				BB142110219D4B3700F02378 /* MediaPlayerVC.xib */,
+				BB142113219D4B3700F02378 /* XSMediaPlayer.h */,
 				BB142116219D4B3700F02378 /* XSMediaPlayer.m */,
+				BB142115219D4B3700F02378 /* XSMediaPlayerMaskView.h */,
+				BB142112219D4B3700F02378 /* XSMediaPlayerMaskView.m */,
 			);
 			path = media;
 			sourceTree = "<group>";
@@ -611,12 +611,12 @@
 		BB14212B219D4B3700F02378 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				BB14212F219D4B3700F02378 /* EillyerTableCell.h */,
 				BB14212C219D4B3700F02378 /* EillyerTableCell.m */,
+				BB142131219D4B3700F02378 /* EillyerBaseTableViewViewController.h */,
 				BB14212D219D4B3700F02378 /* EillyerBaseTableViewViewController.m */,
 				BB14212E219D4B3700F02378 /* noData@2x.png */,
-				BB14212F219D4B3700F02378 /* EillyerTableCell.h */,
 				BB142130219D4B3700F02378 /* noData@3x.png */,
-				BB142131219D4B3700F02378 /* EillyerBaseTableViewViewController.h */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -633,13 +633,13 @@
 		BB142135219D4B3700F02378 /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
+				BB142139219D4B3700F02378 /* EillyerBaseCollectionViewCell.h */,
 				BB142136219D4B3700F02378 /* EillyerBaseCollectionViewCell.m */,
+				BB14213C219D4B3700F02378 /* EillyerBaseCollectionViewCell.xib */,
+				BB14213B219D4B3700F02378 /* EillyerBaseCollectionView.h */,
 				BB142137219D4B3700F02378 /* EillyerBaseCollectionView.m */,
 				BB142138219D4B3700F02378 /* EillyerBaseFlowLayout.h */,
-				BB142139219D4B3700F02378 /* EillyerBaseCollectionViewCell.h */,
 				BB14213A219D4B3700F02378 /* EillyerBaseFlowLayout.m */,
-				BB14213B219D4B3700F02378 /* EillyerBaseCollectionView.h */,
-				BB14213C219D4B3700F02378 /* EillyerBaseCollectionViewCell.xib */,
 			);
 			path = Collectionview;
 			sourceTree = "<group>";
@@ -683,16 +683,16 @@
 		BB142149219D4B3700F02378 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				BB14214A219D4B3700F02378 /* AccountTool.h */,
+				BB142153219D4B3700F02378 /* BaseModel.h */,
 				BB14214B219D4B3700F02378 /* BaseModel.m */,
-				BB14214C219D4B3700F02378 /* UserInfoManager.h */,
-				BB14214D219D4B3700F02378 /* UserInfoModel.m */,
-				BB14214E219D4B3700F02378 /* KeyChainManager.m */,
+				BB14214A219D4B3700F02378 /* AccountTool.h */,
 				BB14214F219D4B3700F02378 /* AccountTool.m */,
 				BB142150219D4B3700F02378 /* KeyChainManager.h */,
-				BB142151219D4B3700F02378 /* UserInfoModel.h */,
+				BB14214E219D4B3700F02378 /* KeyChainManager.m */,
+				BB14214C219D4B3700F02378 /* UserInfoManager.h */,
 				BB142152219D4B3700F02378 /* UserInfoManager.m */,
-				BB142153219D4B3700F02378 /* BaseModel.h */,
+				BB142151219D4B3700F02378 /* UserInfoModel.h */,
+				BB14214D219D4B3700F02378 /* UserInfoModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -709,16 +709,16 @@
 		BB142170219D4B3700F02378 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				BB142171219D4B3700F02378 /* NetWorkTo.h */,
-				BB142172219D4B3700F02378 /* AFNetWorkingHelper.h */,
-				BB142173219D4B3700F02378 /* MBProgressHUD.m */,
-				BB142174219D4B3700F02378 /* NetWorkTemp.m */,
-				BB142175219D4B3700F02378 /* ServerAPIPath.m */,
-				BB142176219D4B3700F02378 /* NetWorkTemp.h */,
-				BB142177219D4B3700F02378 /* MBProgressHUD.h */,
-				BB142178219D4B3700F02378 /* AFNetWorkingHelper.m */,
-				BB142179219D4B3700F02378 /* NetWorkTo.m */,
 				BB14217A219D4B3700F02378 /* ServerAPIPath.h */,
+				BB142175219D4B3700F02378 /* ServerAPIPath.m */,
+				BB142171219D4B3700F02378 /* NetWorkTo.h */,
+				BB142179219D4B3700F02378 /* NetWorkTo.m */,
+				BB142172219D4B3700F02378 /* AFNetWorkingHelper.h */,
+				BB142178219D4B3700F02378 /* AFNetWorkingHelper.m */,
+				BB142177219D4B3700F02378 /* MBProgressHUD.h */,
+				BB142173219D4B3700F02378 /* MBProgressHUD.m */,
+				BB142176219D4B3700F02378 /* NetWorkTemp.h */,
+				BB142174219D4B3700F02378 /* NetWorkTemp.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -726,11 +726,11 @@
 		BB14217B219D4B3700F02378 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				BB14217F219D4B3700F02378 /* citySelect */,
 				529376BA21D36B1100174317 /* dataSelect */,
+				BB14217E219D4B3700F02378 /* LocationManager.h */,
 				BB14217C219D4B3700F02378 /* LocationManager.m */,
 				BB14217D219D4B3700F02378 /* AppControl.h */,
-				BB14217E219D4B3700F02378 /* LocationManager.h */,
-				BB14217F219D4B3700F02378 /* citySelect */,
 				BB142185219D4B3700F02378 /* AppControl.m */,
 			);
 			path = Tool;
@@ -739,11 +739,11 @@
 		BB14217F219D4B3700F02378 /* citySelect */ = {
 			isa = PBXGroup;
 			children = (
+				BB142184219D4B3700F02378 /* LSCityChooseView.h */,
 				BB142180219D4B3700F02378 /* LSCityChooseView.m */,
+				BB142183219D4B3700F02378 /* ZHDatePickerView.h */,
 				BB142181219D4B3700F02378 /* ZHDatePickerView.m */,
 				BB142182219D4B3700F02378 /* city.plist */,
-				BB142183219D4B3700F02378 /* ZHDatePickerView.h */,
-				BB142184219D4B3700F02378 /* LSCityChooseView.h */,
 			);
 			path = citySelect;
 			sourceTree = "<group>";
@@ -755,10 +755,10 @@
 				BB1421ED219D4E6B00F02378 /* 钱包@3x.png */,
 				BB1421EE219D4E6B00F02378 /* 钱包@2x.png */,
 				BB1421EF219D4E6B00F02378 /* aliPay */,
-				BB1421F4219D4E6B00F02378 /* PayManager.h */,
 				BB1421F5219D4E6B00F02378 /* 选中@2x.png */,
 				BB1421F6219D4E6B00F02378 /* 选中@3x.png */,
 				BB1421F7219D4E6B00F02378 /* view */,
+				BB1421F4219D4E6B00F02378 /* PayManager.h */,
 				BB1421FE219D4E6B00F02378 /* PayManager.m */,
 			);
 			path = PayManager;
