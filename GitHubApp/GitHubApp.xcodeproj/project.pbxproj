@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		40BFC771F33B73D1C0CFDC37 /* libPods-GitHubApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB646E48CCE71C5502F96F7 /* libPods-GitHubApp.a */; };
-		5293765421D0C0F200174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293764F21D0C0F200174317 /* DateAlertView.m */; };
-		5293765521D0C0F200174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293765121D0C0F200174317 /* DateAlertView.xib */; };
-		5293765621D0C0F200174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293765221D0C0F200174317 /* DatePickerView.m */; };
 		5293766A21D220D900174317 /* MyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293766921D220D900174317 /* MyAnimation.m */; };
+		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
+		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
+		529376C221D36B1100174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BE21D36B1100174317 /* DatePickerView.m */; };
 		52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08C21C1038000DECCB3 /* FlipTableView.m */; };
 		52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08F21C1038000DECCB3 /* SegmentTapView.m */; };
 		BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C3219D4A8700F02378 /* AppDelegate.m */; };
@@ -128,13 +128,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5293764F21D0C0F200174317 /* DateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAlertView.m; sourceTree = "<group>"; };
-		5293765021D0C0F200174317 /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
-		5293765121D0C0F200174317 /* DateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAlertView.xib; sourceTree = "<group>"; };
-		5293765221D0C0F200174317 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
-		5293765321D0C0F200174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
 		5293766821D220D900174317 /* MyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimation.h; sourceTree = "<group>"; };
 		5293766921D220D900174317 /* MyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimation.m; sourceTree = "<group>"; };
+		529376BB21D36B1100174317 /* DateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAlertView.m; sourceTree = "<group>"; };
+		529376BC21D36B1100174317 /* DatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerView.h; sourceTree = "<group>"; };
+		529376BD21D36B1100174317 /* DateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAlertView.xib; sourceTree = "<group>"; };
+		529376BE21D36B1100174317 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
+		529376BF21D36B1100174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
 		52B8F08B21C1038000DECCB3 /* FlipTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTableView.h; sourceTree = "<group>"; };
 		52B8F08C21C1038000DECCB3 /* FlipTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTableView.m; sourceTree = "<group>"; };
 		52B8F08E21C1038000DECCB3 /* SegmentTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTapView.h; sourceTree = "<group>"; };
@@ -360,17 +360,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5293764E21D0C0F200174317 /* dataSelect */ = {
+		529376BA21D36B1100174317 /* dataSelect */ = {
 			isa = PBXGroup;
 			children = (
-				5293765321D0C0F200174317 /* DateAlertView.h */,
-				5293764F21D0C0F200174317 /* DateAlertView.m */,
-				5293765121D0C0F200174317 /* DateAlertView.xib */,
-				5293765021D0C0F200174317 /* DatePickerView.h */,
-				5293765221D0C0F200174317 /* DatePickerView.m */,
+				529376BB21D36B1100174317 /* DateAlertView.m */,
+				529376BC21D36B1100174317 /* DatePickerView.h */,
+				529376BD21D36B1100174317 /* DateAlertView.xib */,
+				529376BE21D36B1100174317 /* DatePickerView.m */,
+				529376BF21D36B1100174317 /* DateAlertView.h */,
 			);
-			name = dataSelect;
-			path = ../../../../../../../Desktop/QuanMeiShi/QuanMeiShi/Class/My/subVC/dataSelect;
+			path = dataSelect;
 			sourceTree = "<group>";
 		};
 		52B8F08921C1034D00DECCB3 /* TitleChange */ = {
@@ -727,7 +726,7 @@
 		BB14217B219D4B3700F02378 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				5293764E21D0C0F200174317 /* dataSelect */,
+				529376BA21D36B1100174317 /* dataSelect */,
 				BB14217C219D4B3700F02378 /* LocationManager.m */,
 				BB14217D219D4B3700F02378 /* AppControl.h */,
 				BB14217E219D4B3700F02378 /* LocationManager.h */,
@@ -886,7 +885,7 @@
 				BB142205219D4E6B00F02378 /* AlipaySDK.bundle in Resources */,
 				BB1421AE219D4B3800F02378 /* noData@3x.png in Resources */,
 				BB142190219D4B3800F02378 /* add@3x.png in Resources */,
-				5293765521D0C0F200174317 /* DateAlertView.xib in Resources */,
+				529376C121D36B1100174317 /* DateAlertView.xib in Resources */,
 				BB14218E219D4B3800F02378 /* add@2x.png in Resources */,
 				BB14218C219D4B3800F02378 /* LoginVC.xib in Resources */,
 				BB142209219D4E6B00F02378 /* 选中@3x.png in Resources */,
@@ -982,6 +981,7 @@
 				BB1421A0219D4B3800F02378 /* XSMediaPlayer.m in Sources */,
 				BB1421BC219D4B3800F02378 /* UserInfoManager.m in Sources */,
 				BB1421A9219D4B3800F02378 /* NSDictionary+dictJson.m in Sources */,
+				529376C021D36B1100174317 /* DateAlertView.m in Sources */,
 				BB1421B9219D4B3800F02378 /* UserInfoModel.m in Sources */,
 				BB142194219D4B3800F02378 /* AVURLAsset+SetMp4.m in Sources */,
 				BB1421B8219D4B3800F02378 /* BaseModel.m in Sources */,
@@ -994,6 +994,7 @@
 				BB1421B0219D4B3800F02378 /* EillyerBaseCollectionViewCell.m in Sources */,
 				BB1421B2219D4B3800F02378 /* EillyerBaseFlowLayout.m in Sources */,
 				BB1421D4219D4B3800F02378 /* LSCityChooseView.m in Sources */,
+				529376C221D36B1100174317 /* DatePickerView.m in Sources */,
 				BB1421BA219D4B3800F02378 /* KeyChainManager.m in Sources */,
 				BB1421CE219D4B3800F02378 /* MBProgressHUD.m in Sources */,
 				BB1421A8219D4B3800F02378 /* NSString+extension.m in Sources */,
@@ -1023,14 +1024,12 @@
 				BB14220A219D4E6B00F02378 /* PayAlertView.m in Sources */,
 				BB14220B219D4E6B00F02378 /* PayChooseBtn.m in Sources */,
 				BB1421BB219D4B3800F02378 /* AccountTool.m in Sources */,
-				5293765421D0C0F200174317 /* DateAlertView.m in Sources */,
 				BB14219F219D4B3800F02378 /* MediaPlayerVC.m in Sources */,
 				BB1421D7219D4B3800F02378 /* AppControl.m in Sources */,
 				BB142188219D4B3800F02378 /* ForgetPasswordVC.m in Sources */,
 				BB14218A219D4B3800F02378 /* SendCodeBtn.m in Sources */,
 				BB142186219D4B3800F02378 /* LoginVC.m in Sources */,
 				BB1421E5219D4CF100F02378 /* CameroViewController.m in Sources */,
-				5293765621D0C0F200174317 /* DatePickerView.m in Sources */,
 				BB1421A3219D4B3800F02378 /* NSString+NowDate.m in Sources */,
 				BB142191219D4B3800F02378 /* ImageAndMovEditCell.m in Sources */,
 				BB1421A6219D4B3800F02378 /* UIImage+image.m in Sources */,
