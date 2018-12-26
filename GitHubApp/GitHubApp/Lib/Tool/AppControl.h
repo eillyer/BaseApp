@@ -26,7 +26,12 @@
  */
 + (NSString *)getAppVersion;
 
+/**
+ 获取uuid
 
+ @return uuid
+ */
++ (NSString *)getUUID;
 
 /**
  提示消息

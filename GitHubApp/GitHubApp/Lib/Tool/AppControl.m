@@ -40,6 +40,14 @@
     return dict[@"CFBundleShortVersionString"];
 }
 
++ (NSString *)getUUID {
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    CFStringRef uuidString = CFUUIDCreateString(nil, puuid);
+    NSString *result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    return result;
+}
+
+
 + (void)showMessage:(NSString *)msg afterTime:(NSTimeInterval)time{
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     if (!isiPhone) {
