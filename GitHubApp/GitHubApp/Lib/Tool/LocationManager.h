@@ -9,6 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
+
+/*使用规则
+ LocationManager *mag = [LocationManager sharedLocatiomManager];
+ 
+ mag.sendValueBlock = ^(NSString *longitude, NSString *weidu, CLPlacemark *weizhi, BOOL isOK, NSString *erro) {};
+ 
+ [mag findMe];
+ 
+ */
+
 typedef void(^sendLocationValue)(NSString *longitude,NSString *latitude,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
 
 typedef void(^getLocationValue)(NSString *longitude,NSString *latitude,BOOL isOK,NSString *erro);
