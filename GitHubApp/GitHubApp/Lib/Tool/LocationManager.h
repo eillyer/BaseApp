@@ -9,17 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-typedef void(^sendLocationValue)(NSString *jingdu,NSString *weidu,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
+typedef void(^sendLocationValue)(NSString *longitude,NSString *latitude,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
 
-typedef void(^getLocationValue)(NSString *jingdu,NSString *weidu,BOOL isOK,NSString *erro);
+typedef void(^getLocationValue)(NSString *longitude,NSString *latitude,BOOL isOK,NSString *erro);
 
 @interface LocationManager : NSObject
 
 
 + (instancetype)sharedLocatiomManager;
-
-
-
 
 @property (nonatomic,copy) sendLocationValue sendValueBlock;//copy 将 block 从栈区 copy 到堆区,已提供使用
 
