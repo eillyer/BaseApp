@@ -25,7 +25,6 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
-
 //iphone-X适配纯代码用
 #define SafeAreaTopHeight     (IphoneStatusBarHeight > 20.0 ? 88 : 64)
 #define SafeAreaBottomHeight  (IphoneStatusBarHeight > 20.0 ? 34 : 0)
@@ -53,6 +52,10 @@
 #define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define kRGB(r, g, b) RGBA(r, g, b,1.0)
 #define kColorHex(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+
+#import "UIColor+color.h"
+#define kColorWithHex(color) [UIColor colorWithHexString:color alpha:1]
 
 //地图
 #define kMapZoom 8.345
