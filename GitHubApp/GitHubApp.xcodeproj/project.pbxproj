@@ -14,6 +14,10 @@
 		529376C221D36B1100174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BE21D36B1100174317 /* DatePickerView.m */; };
 		52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08C21C1038000DECCB3 /* FlipTableView.m */; };
 		52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08F21C1038000DECCB3 /* SegmentTapView.m */; };
+		52CF24C822091DA90070F786 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C222091DA80070F786 /* MyCell.m */; };
+		52CF24C922091DA90070F786 /* MySettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C322091DA80070F786 /* MySettingModel.m */; };
+		52CF24CA22091DA90070F786 /* MySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C522091DA80070F786 /* MySettingCell.m */; };
+		52CF24CB22091DA90070F786 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CF24C622091DA80070F786 /* MyCell.xib */; };
 		BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C3219D4A8700F02378 /* AppDelegate.m */; };
 		BB1420C7219D4A8700F02378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C6219D4A8700F02378 /* ViewController.m */; };
 		BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1420C8219D4A8700F02378 /* Main.storyboard */; };
@@ -140,6 +144,13 @@
 		52B8F08E21C1038000DECCB3 /* SegmentTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTapView.h; sourceTree = "<group>"; };
 		52B8F08F21C1038000DECCB3 /* SegmentTapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentTapView.m; sourceTree = "<group>"; };
 		52B8F09221C103BE00DECCB3 /* ReadMeTitleChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMeTitleChange.h; sourceTree = "<group>"; };
+		52CF24C122091DA80070F786 /* MySettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingCell.h; sourceTree = "<group>"; };
+		52CF24C222091DA80070F786 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		52CF24C322091DA80070F786 /* MySettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingModel.m; sourceTree = "<group>"; };
+		52CF24C422091DA80070F786 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		52CF24C522091DA80070F786 /* MySettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingCell.m; sourceTree = "<group>"; };
+		52CF24C622091DA80070F786 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		52CF24C722091DA90070F786 /* MySettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingModel.h; sourceTree = "<group>"; };
 		8B2C2B8D3DB0DE9A57B80617 /* Pods-GitHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.release.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.release.xcconfig"; sourceTree = "<group>"; };
 		8CBB2015463C6AF7CB1AA649 /* Pods-GitHubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.debug.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1420BF219D4A8700F02378 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +411,20 @@
 			path = SegementTap;
 			sourceTree = "<group>";
 		};
+		52CF24C022091D920070F786 /* MyCell */ = {
+			isa = PBXGroup;
+			children = (
+				52CF24C422091DA80070F786 /* MyCell.h */,
+				52CF24C222091DA80070F786 /* MyCell.m */,
+				52CF24C622091DA80070F786 /* MyCell.xib */,
+				52CF24C122091DA80070F786 /* MySettingCell.h */,
+				52CF24C522091DA80070F786 /* MySettingCell.m */,
+				52CF24C722091DA90070F786 /* MySettingModel.h */,
+				52CF24C322091DA80070F786 /* MySettingModel.m */,
+			);
+			path = MyCell;
+			sourceTree = "<group>";
+		};
 		BB1420B6219D4A8700F02378 = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +505,7 @@
 		BB1420E9219D4B3700F02378 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
+				52CF24C022091D920070F786 /* MyCell */,
 				BB1420EA219D4B3700F02378 /* SendCodeBtn.h */,
 				BB1420F2219D4B3700F02378 /* SendCodeBtn.m */,
 				BB1420F5219D4B3700F02378 /* SendCodeBtn.xib */,
@@ -909,6 +935,7 @@
 				BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */,
 				BB14218D219D4B3800F02378 /* SendCodeBtn.xib in Resources */,
 				BB1421AD219D4B3800F02378 /* noData@2x.png in Resources */,
+				52CF24CB22091DA90070F786 /* MyCell.xib in Resources */,
 				BB142198219D4B3800F02378 /* slider@2x.png in Resources */,
 				BB14220C219D4E6B00F02378 /* PayAlertView.xib in Resources */,
 				BB14218B219D4B3800F02378 /* ForgetPasswordVC.xib in Resources */,
@@ -986,11 +1013,13 @@
 				BB142194219D4B3800F02378 /* AVURLAsset+SetMp4.m in Sources */,
 				BB1421B8219D4B3800F02378 /* BaseModel.m in Sources */,
 				BB14219E219D4B3800F02378 /* XSMediaPlayerMaskView.m in Sources */,
+				52CF24C922091DA90070F786 /* MySettingModel.m in Sources */,
 				BB1421D3219D4B3800F02378 /* LocationManager.m in Sources */,
 				BB1421A4219D4B3800F02378 /* UIColor+color.m in Sources */,
 				BB1421A5219D4B3800F02378 /* NSString+Pinyin.m in Sources */,
 				BB1421E3219D4CF100F02378 /* aaa.m in Sources */,
 				BB1421B5219D4B3800F02378 /* EillyerBaseViewController.m in Sources */,
+				52CF24CA22091DA90070F786 /* MySettingCell.m in Sources */,
 				BB1421B0219D4B3800F02378 /* EillyerBaseCollectionViewCell.m in Sources */,
 				BB1421B2219D4B3800F02378 /* EillyerBaseFlowLayout.m in Sources */,
 				BB1421D4219D4B3800F02378 /* LSCityChooseView.m in Sources */,
@@ -1027,6 +1056,7 @@
 				BB14219F219D4B3800F02378 /* MediaPlayerVC.m in Sources */,
 				BB1421D7219D4B3800F02378 /* AppControl.m in Sources */,
 				BB142188219D4B3800F02378 /* ForgetPasswordVC.m in Sources */,
+				52CF24C822091DA90070F786 /* MyCell.m in Sources */,
 				BB14218A219D4B3800F02378 /* SendCodeBtn.m in Sources */,
 				BB142186219D4B3800F02378 /* LoginVC.m in Sources */,
 				BB1421E5219D4CF100F02378 /* CameroViewController.m in Sources */,
