@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		40BFC771F33B73D1C0CFDC37 /* libPods-GitHubApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB646E48CCE71C5502F96F7 /* libPods-GitHubApp.a */; };
+		52435E4A2211220600FABA56 /* WSLScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52435E412211220600FABA56 /* WSLScanView.m */; };
+		52435E4B2211220600FABA56 /* scanFlashlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52435E422211220600FABA56 /* scanFlashlight@3x.png */; };
+		52435E4C2211220600FABA56 /* scanFlashlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52435E432211220600FABA56 /* scanFlashlight@2x.png */; };
+		52435E4D2211220600FABA56 /* QRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52435E442211220600FABA56 /* QRCodeView.m */; };
+		52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52435E462211220600FABA56 /* WSLNativeScanTool.m */; };
+		52435E4F2211220600FABA56 /* scanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52435E472211220600FABA56 /* scanLine@2x.png */; };
+		52435E502211220600FABA56 /* QRCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52435E482211220600FABA56 /* QRCodeView.xib */; };
 		5293766A21D220D900174317 /* MyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293766921D220D900174317 /* MyAnimation.m */; };
 		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
@@ -132,6 +139,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52435E402211220600FABA56 /* WSLNativeScanTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLNativeScanTool.h; sourceTree = "<group>"; };
+		52435E412211220600FABA56 /* WSLScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLScanView.m; sourceTree = "<group>"; };
+		52435E422211220600FABA56 /* scanFlashlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanFlashlight@3x.png"; sourceTree = "<group>"; };
+		52435E432211220600FABA56 /* scanFlashlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanFlashlight@2x.png"; sourceTree = "<group>"; };
+		52435E442211220600FABA56 /* QRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeView.m; sourceTree = "<group>"; };
+		52435E452211220600FABA56 /* WSLScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLScanView.h; sourceTree = "<group>"; };
+		52435E462211220600FABA56 /* WSLNativeScanTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLNativeScanTool.m; sourceTree = "<group>"; };
+		52435E472211220600FABA56 /* scanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@2x.png"; sourceTree = "<group>"; };
+		52435E482211220600FABA56 /* QRCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeView.xib; sourceTree = "<group>"; };
+		52435E492211220600FABA56 /* QRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
 		5293766821D220D900174317 /* MyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimation.h; sourceTree = "<group>"; };
 		5293766921D220D900174317 /* MyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimation.m; sourceTree = "<group>"; };
 		529376BB21D36B1100174317 /* DateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAlertView.m; sourceTree = "<group>"; };
@@ -369,6 +386,23 @@
 				FAB646E48CCE71C5502F96F7 /* libPods-GitHubApp.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52435E3F2211220600FABA56 /* QRCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				52435E402211220600FABA56 /* WSLNativeScanTool.h */,
+				52435E412211220600FABA56 /* WSLScanView.m */,
+				52435E422211220600FABA56 /* scanFlashlight@3x.png */,
+				52435E432211220600FABA56 /* scanFlashlight@2x.png */,
+				52435E442211220600FABA56 /* QRCodeView.m */,
+				52435E452211220600FABA56 /* WSLScanView.h */,
+				52435E462211220600FABA56 /* WSLNativeScanTool.m */,
+				52435E472211220600FABA56 /* scanLine@2x.png */,
+				52435E482211220600FABA56 /* QRCodeView.xib */,
+				52435E492211220600FABA56 /* QRCodeView.h */,
+			);
+			path = QRCodeView;
 			sourceTree = "<group>";
 		};
 		529376BA21D36B1100174317 /* dataSelect */ = {
@@ -752,6 +786,7 @@
 		BB14217B219D4B3700F02378 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				52435E3F2211220600FABA56 /* QRCodeView */,
 				BB14217F219D4B3700F02378 /* citySelect */,
 				529376BA21D36B1100174317 /* dataSelect */,
 				BB14217E219D4B3700F02378 /* LocationManager.h */,
@@ -922,6 +957,7 @@
 				BB1421B3219D4B3800F02378 /* EillyerBaseCollectionViewCell.xib in Resources */,
 				BB1420CF219D4A8900F02378 /* LaunchScreen.storyboard in Resources */,
 				BB14220D219D4E6B00F02378 /* PayChooseBtn.xib in Resources */,
+				52435E4C2211220600FABA56 /* scanFlashlight@2x.png in Resources */,
 				BB1420CC219D4A8900F02378 /* Assets.xcassets in Resources */,
 				BB142204219D4E6B00F02378 /* 支付宝@2x.png in Resources */,
 				BB142200219D4E6B00F02378 /* 微信@3x.png in Resources */,
@@ -933,6 +969,7 @@
 				BB142203219D4E6B00F02378 /* 钱包@2x.png in Resources */,
 				BB142199219D4B3800F02378 /* kr-video-player-pause@3x.png in Resources */,
 				BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */,
+				52435E502211220600FABA56 /* QRCodeView.xib in Resources */,
 				BB14218D219D4B3800F02378 /* SendCodeBtn.xib in Resources */,
 				BB1421AD219D4B3800F02378 /* noData@2x.png in Resources */,
 				52CF24CB22091DA90070F786 /* MyCell.xib in Resources */,
@@ -940,6 +977,8 @@
 				BB14220C219D4E6B00F02378 /* PayAlertView.xib in Resources */,
 				BB14218B219D4B3800F02378 /* ForgetPasswordVC.xib in Resources */,
 				BB1421E4219D4CF100F02378 /* asdfasdf.xib in Resources */,
+				52435E4F2211220600FABA56 /* scanLine@2x.png in Resources */,
+				52435E4B2211220600FABA56 /* scanFlashlight@3x.png in Resources */,
 				BB14219A219D4B3800F02378 /* kr-video-player-fullscreen@3x.png in Resources */,
 				BB142208219D4E6B00F02378 /* 选中@2x.png in Resources */,
 				BB14219C219D4B3800F02378 /* kr-video-player-pause@2x.png in Resources */,
@@ -1023,6 +1062,7 @@
 				BB1421B0219D4B3800F02378 /* EillyerBaseCollectionViewCell.m in Sources */,
 				BB1421B2219D4B3800F02378 /* EillyerBaseFlowLayout.m in Sources */,
 				BB1421D4219D4B3800F02378 /* LSCityChooseView.m in Sources */,
+				52435E4A2211220600FABA56 /* WSLScanView.m in Sources */,
 				529376C221D36B1100174317 /* DatePickerView.m in Sources */,
 				BB1421BA219D4B3800F02378 /* KeyChainManager.m in Sources */,
 				BB1421CE219D4B3800F02378 /* MBProgressHUD.m in Sources */,
@@ -1036,12 +1076,14 @@
 				BB1421B6219D4B3800F02378 /* EillyerBaseTabBarController.m in Sources */,
 				BB1420D2219D4A8900F02378 /* main.m in Sources */,
 				5293766A21D220D900174317 /* MyAnimation.m in Sources */,
+				52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */,
 				BB1421AB219D4B3800F02378 /* EillyerTableCell.m in Sources */,
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,
 				BB14220E219D4E6B00F02378 /* PayManager.m in Sources */,
 				BB1421A2219D4B3800F02378 /* AddImageAndMp4VC.m in Sources */,
 				52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */,
 				BB1421D5219D4B3800F02378 /* ZHDatePickerView.m in Sources */,
+				52435E4D2211220600FABA56 /* QRCodeView.m in Sources */,
 				BB1421AA219D4B3800F02378 /* NSArray+array.m in Sources */,
 				BB14218F219D4B3800F02378 /* ImageAndMovEditCellLayout.m in Sources */,
 				BB1421CF219D4B3800F02378 /* NetWorkTemp.m in Sources */,
