@@ -15,6 +15,12 @@
 		52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52435E462211220600FABA56 /* WSLNativeScanTool.m */; };
 		52435E4F2211220600FABA56 /* scanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52435E472211220600FABA56 /* scanLine@2x.png */; };
 		52435E502211220600FABA56 /* QRCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52435E482211220600FABA56 /* QRCodeView.xib */; };
+		525EA5292212C1D700B56F4A /* AddressManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA51E2212C1D700B56F4A /* AddressManagerVC.m */; };
+		525EA52A2212C1D700B56F4A /* AddAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525EA5212212C1D700B56F4A /* AddAddressVC.xib */; };
+		525EA52B2212C1D700B56F4A /* AddressManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA5222212C1D700B56F4A /* AddressManagerCell.m */; };
+		525EA52C2212C1D700B56F4A /* AddressManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525EA5242212C1D700B56F4A /* AddressManagerCell.xib */; };
+		525EA52D2212C1D700B56F4A /* AddAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA5252212C1D700B56F4A /* AddAddressVC.m */; };
+		525EA52E2212C1D700B56F4A /* AddressManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA5262212C1D700B56F4A /* AddressManagerModel.m */; };
 		5293766A21D220D900174317 /* MyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293766921D220D900174317 /* MyAnimation.m */; };
 		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
@@ -149,6 +155,16 @@
 		52435E472211220600FABA56 /* scanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@2x.png"; sourceTree = "<group>"; };
 		52435E482211220600FABA56 /* QRCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeView.xib; sourceTree = "<group>"; };
 		52435E492211220600FABA56 /* QRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeView.h; sourceTree = "<group>"; };
+		525EA51E2212C1D700B56F4A /* AddressManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManagerVC.m; sourceTree = "<group>"; };
+		525EA5202212C1D700B56F4A /* AddAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAddressVC.h; sourceTree = "<group>"; };
+		525EA5212212C1D700B56F4A /* AddAddressVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAddressVC.xib; sourceTree = "<group>"; };
+		525EA5222212C1D700B56F4A /* AddressManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManagerCell.m; sourceTree = "<group>"; };
+		525EA5232212C1D700B56F4A /* AddressManagerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerModel.h; sourceTree = "<group>"; };
+		525EA5242212C1D700B56F4A /* AddressManagerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressManagerCell.xib; sourceTree = "<group>"; };
+		525EA5252212C1D700B56F4A /* AddAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAddressVC.m; sourceTree = "<group>"; };
+		525EA5262212C1D700B56F4A /* AddressManagerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManagerModel.m; sourceTree = "<group>"; };
+		525EA5272212C1D700B56F4A /* AddressManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerCell.h; sourceTree = "<group>"; };
+		525EA5282212C1D700B56F4A /* AddressManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerVC.h; sourceTree = "<group>"; };
 		5293766821D220D900174317 /* MyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimation.h; sourceTree = "<group>"; };
 		5293766921D220D900174317 /* MyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimation.m; sourceTree = "<group>"; };
 		529376BB21D36B1100174317 /* DateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAlertView.m; sourceTree = "<group>"; };
@@ -403,6 +419,31 @@
 				52435E492211220600FABA56 /* QRCodeView.h */,
 			);
 			path = QRCodeView;
+			sourceTree = "<group>";
+		};
+		525EA51D2212C1D700B56F4A /* AddressManager */ = {
+			isa = PBXGroup;
+			children = (
+				525EA51E2212C1D700B56F4A /* AddressManagerVC.m */,
+				525EA51F2212C1D700B56F4A /* sub */,
+				525EA5282212C1D700B56F4A /* AddressManagerVC.h */,
+			);
+			path = AddressManager;
+			sourceTree = "<group>";
+		};
+		525EA51F2212C1D700B56F4A /* sub */ = {
+			isa = PBXGroup;
+			children = (
+				525EA5202212C1D700B56F4A /* AddAddressVC.h */,
+				525EA5212212C1D700B56F4A /* AddAddressVC.xib */,
+				525EA5222212C1D700B56F4A /* AddressManagerCell.m */,
+				525EA5232212C1D700B56F4A /* AddressManagerModel.h */,
+				525EA5242212C1D700B56F4A /* AddressManagerCell.xib */,
+				525EA5252212C1D700B56F4A /* AddAddressVC.m */,
+				525EA5262212C1D700B56F4A /* AddressManagerModel.m */,
+				525EA5272212C1D700B56F4A /* AddressManagerCell.h */,
+			);
+			path = sub;
 			sourceTree = "<group>";
 		};
 		529376BA21D36B1100174317 /* dataSelect */ = {
@@ -786,6 +827,7 @@
 		BB14217B219D4B3700F02378 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				525EA51D2212C1D700B56F4A /* AddressManager */,
 				52435E3F2211220600FABA56 /* QRCodeView */,
 				BB14217F219D4B3700F02378 /* citySelect */,
 				529376BA21D36B1100174317 /* dataSelect */,
@@ -957,6 +999,7 @@
 				BB1421B3219D4B3800F02378 /* EillyerBaseCollectionViewCell.xib in Resources */,
 				BB1420CF219D4A8900F02378 /* LaunchScreen.storyboard in Resources */,
 				BB14220D219D4E6B00F02378 /* PayChooseBtn.xib in Resources */,
+				525EA52C2212C1D700B56F4A /* AddressManagerCell.xib in Resources */,
 				52435E4C2211220600FABA56 /* scanFlashlight@2x.png in Resources */,
 				BB1420CC219D4A8900F02378 /* Assets.xcassets in Resources */,
 				BB142204219D4E6B00F02378 /* 支付宝@2x.png in Resources */,
@@ -966,6 +1009,7 @@
 				BB142202219D4E6B00F02378 /* 钱包@3x.png in Resources */,
 				BB142201219D4E6B00F02378 /* 微信@2x.png in Resources */,
 				BB142192219D4B3800F02378 /* ImageAndMovEditCell.xib in Resources */,
+				525EA52A2212C1D700B56F4A /* AddAddressVC.xib in Resources */,
 				BB142203219D4E6B00F02378 /* 钱包@2x.png in Resources */,
 				BB142199219D4B3800F02378 /* kr-video-player-pause@3x.png in Resources */,
 				BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */,
@@ -1077,8 +1121,11 @@
 				BB1420D2219D4A8900F02378 /* main.m in Sources */,
 				5293766A21D220D900174317 /* MyAnimation.m in Sources */,
 				52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */,
+				525EA52B2212C1D700B56F4A /* AddressManagerCell.m in Sources */,
 				BB1421AB219D4B3800F02378 /* EillyerTableCell.m in Sources */,
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,
+				525EA5292212C1D700B56F4A /* AddressManagerVC.m in Sources */,
+				525EA52E2212C1D700B56F4A /* AddressManagerModel.m in Sources */,
 				BB14220E219D4E6B00F02378 /* PayManager.m in Sources */,
 				BB1421A2219D4B3800F02378 /* AddImageAndMp4VC.m in Sources */,
 				52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */,
@@ -1101,6 +1148,7 @@
 				52CF24C822091DA90070F786 /* MyCell.m in Sources */,
 				BB14218A219D4B3800F02378 /* SendCodeBtn.m in Sources */,
 				BB142186219D4B3800F02378 /* LoginVC.m in Sources */,
+				525EA52D2212C1D700B56F4A /* AddAddressVC.m in Sources */,
 				BB1421E5219D4CF100F02378 /* CameroViewController.m in Sources */,
 				BB1421A3219D4B3800F02378 /* NSString+NowDate.m in Sources */,
 				BB142191219D4B3800F02378 /* ImageAndMovEditCell.m in Sources */,

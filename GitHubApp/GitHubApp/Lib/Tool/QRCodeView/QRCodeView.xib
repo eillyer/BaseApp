@@ -34,6 +34,19 @@
                                 <action selector="photo:" destination="iN0-l3-epB" eventType="touchUpInside" id="QUa-HG-bhz"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmY-ZM-O5v">
+                            <rect key="frame" x="20" y="25" width="46" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="3hp-W8-WuO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="iN0-l3-epB" eventType="touchUpInside" id="RTG-b3-xXe"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -42,6 +55,8 @@
                         <constraint firstAttribute="height" constant="64" id="OQV-GG-11J"/>
                         <constraint firstItem="jiu-Ot-9k0" firstAttribute="centerX" secondItem="1rJ-lD-PoF" secondAttribute="centerX" id="SWg-fZ-mIK"/>
                         <constraint firstAttribute="bottom" secondItem="jiu-Ot-9k0" secondAttribute="bottom" constant="10" id="Tqe-R9-OHt"/>
+                        <constraint firstItem="gmY-ZM-O5v" firstAttribute="leading" secondItem="1rJ-lD-PoF" secondAttribute="leading" constant="20" id="Vr6-Pj-xuw"/>
+                        <constraint firstAttribute="bottom" secondItem="gmY-ZM-O5v" secondAttribute="bottom" constant="10" id="ees-qY-PDo"/>
                     </constraints>
                 </view>
             </subviews>

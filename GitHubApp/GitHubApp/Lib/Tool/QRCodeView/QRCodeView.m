@@ -31,6 +31,9 @@
     QRCodeView *View = [[UINib nibWithNibName:@"QRCodeView" bundle:nil]instantiateWithOwner:self options:nil].lastObject;
     return View;
 }
+- (IBAction)back:(id)sender {
+    [self removeFromSuperview];
+}
 
 - (void)loadViewScanString:(void (^)(NSString *))Scanstr{
     
