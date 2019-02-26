@@ -10,6 +10,8 @@
 
 #import "EillyerBaseTabBarController.h"
 #import "EliiyerBaseNavigationController.h"
+#import "AFNetworking.h"
+#import "ServerAPIPath.h"
 
 
 
@@ -28,8 +30,11 @@
     [super viewDidLoad];
     
     self.tabBar.tintColor = kTableColor;
-    self.delegate = self;
+//    self.delegate = self;
+    [self getVersionForAppStore];
     [self setingView];
+    self.tabBar.translucent = NO;
+    
 }
 
 - (void)setingView{
@@ -185,4 +190,35 @@
  
  */
 
+- (void)getVersionForAppStore {
+    AFHTTPSessionManager *manager  = [AFHTTPSessionManager manager];
+    manager.requestSerializer =[AFHTTPRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"text/html",@"text/plain",@"application/json",@"text/javascript",nil];
+    NSString *urlStr = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",APP_STORE_ID];
+    [manager POST:urlStr parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *array = responseObject[@"results"];
+        NSDictionary *dic = array[0];
+        NSString *appStoreVersionStr = dic[@"version"];
+        NSString *myVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+        BOOL is = [myVersion compare:appStoreVersionStr] == NSOrderedDescending;
+        
+        if (is) {
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"myappversion"];
+        }else{
+            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"myappversion"];
+            
+        }
+        
+        NSLog(@"！！！！！！！！！！！！！！！！！！！！！！%@",is?@"yes":@"no");
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@", error);
+        
+    }];
+    
+    
+}
 @end
