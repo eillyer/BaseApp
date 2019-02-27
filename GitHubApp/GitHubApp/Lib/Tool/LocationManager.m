@@ -126,34 +126,29 @@
     if (![self determineWhetherTheAPPOpensTheLocation]) {
         self.sendValueBlock(@"",@"",nil,NO,@"因网络原因无法获得位置信息,请手动设置");
         
-        if ([[NSUserDefaults standardUserDefaults] boolForKey:@"myappversion"]) {
-            return;
+        if (![[NSUserDefaults standardUserDefaults] boolForKey:@"myappversion"]) {
+            dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(7 * NSEC_PER_SEC));
+            dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+                UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"因为无法获取位置信息，请设置允许获取位置信息" preferredStyle:(UIAlertControllerStyleAlert)];
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"设置" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+                    NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+                    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+                        [[UIApplication sharedApplication] openURL:url];
+                    }
+                }];
+                
+                [vc addAction:action];
+                
+                [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:vc animated:YES completion:nil];
+                
+            });
         }
-        
-        dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(7 * NSEC_PER_SEC));
-        dispatch_after(delayTime, dispatch_get_main_queue(), ^{
-            UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"因为无法获取位置信息，请设置允许获取位置信息" preferredStyle:(UIAlertControllerStyleAlert)];
-            
-            UIAlertAction *action = [UIAlertAction actionWithTitle:@"设置" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-                NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-                if ([[UIApplication sharedApplication] canOpenURL:url]) {
-                    [[UIApplication sharedApplication] openURL:url];
-                }
-            }];
-            
-            [vc addAction:action];
-            
-            [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:vc animated:YES completion:nil];
-            
-        });
-        
-        
-        return;
     }
     
     if ([self.locationManger respondsToSelector:@selector(requestLocation)]) {
         //        [self.locationManger requestAlwaysAuthorization];
-        [self.locationManger requestAlwaysAuthorization];
+        [self.locationManger requestWhenInUseAuthorization];
     }
     
     
