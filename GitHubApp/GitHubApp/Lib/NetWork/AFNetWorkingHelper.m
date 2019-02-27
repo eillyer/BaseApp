@@ -479,7 +479,7 @@
                 }
             }
         }
-        //根据状态选择
+        //根据状态选择12345678
     }
     if ([@[@"2G",@"3G",@"4G",@"wifi"] containsObject:state]) {
         return YES;

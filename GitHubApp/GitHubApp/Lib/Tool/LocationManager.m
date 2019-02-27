@@ -154,7 +154,7 @@
     
     [self.locationManger startUpdatingLocation];
     
-    NSLog(@"开始定位");
+    NSLog(@"开始定位12345");
 }
 
 - (BOOL)determineWhetherTheAPPOpensTheLocation{
