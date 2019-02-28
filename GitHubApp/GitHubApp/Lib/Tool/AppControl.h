@@ -13,7 +13,7 @@
 
 /**
  单例
-
+ 
  @return appcontrol
  */
 + (instancetype)shared;
@@ -21,21 +21,21 @@
 
 /**
  获取app版本
-
+ 
  @return 版本号
  */
 + (NSString *)getAppVersion;
 
 /**
  获取uuid
-
+ 
  @return uuid
  */
 + (NSString *)getUUID;
 
 /**
  提示消息
-
+ 
  @param msg 提示语
  @param time 时间
  */
@@ -44,7 +44,7 @@
 
 /**
  系统弹框
-
+ 
  @param title 标题
  @param text 内容
  @param Action 事件处理（nil则展示取消按钮）
@@ -52,7 +52,5 @@
 + (void)showSYSAlertTitle:(NSString *)title
                      text:(NSString *)text
                    Action:(void(^)(void))Action;
-
-
 
 @end

@@ -98,4 +98,13 @@ typedef NS_ENUM(NSInteger,BaseAlertViewAnimetionType) {
  @param color 虚线颜色
  */
 - (void)addBorderToLayerLong:(NSNumber *)Long wid:(NSNumber *)wid color:(UIColor *)color;
+
+
+/**
+ 获取当前响应的Controller
+
+ @return vc
+ */
+- (UIViewController *)getMyViewController;
+
 @end

@@ -388,5 +388,15 @@
     return self.frame.origin.x + self.frame.size.width;
 }
 
+- (UIViewController *)getMyViewController{
+    UIResponder *responder = self;
+    // 循环获取下一个响应者,直到响应者是一个UIViewController类的一个对象为止,然后返回该对象.
+    while ((responder = [responder nextResponder])) {
+        if ([responder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)responder;
+        }
+    }
+    return nil;
+}
 
 @end

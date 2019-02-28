@@ -56,7 +56,7 @@
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
     hud.detailsLabelText = msg.length ? msg : @"失败";
-//    hud.labelText
+    //    hud.labelText
     hud.margin = 10.f;
     hud.yOffset = 150.f;
     hud.removeFromSuperViewOnHide = YES;
@@ -79,7 +79,10 @@
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:action];
     [kRootViewController presentViewController:alert animated:YES completion:nil];
-
+    
+    
 }
+
+
 
 @end
