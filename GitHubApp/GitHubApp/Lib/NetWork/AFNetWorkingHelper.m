@@ -51,7 +51,7 @@
     //    AFHTTPResponseSerializer              NSData类型
     //    AFXMLParserResponseSerializer         XML类型
     //    AFJSONResponseSerializer              JSON类型
-    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [self.sessionManager GET:urlStr parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         // 相关下载操作
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -67,7 +67,7 @@
         }
         self.activity.hidden = YES;
         [self.activity removeFromSuperview];
-
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 请求失败返回的数据
         if (error) {
@@ -75,8 +75,8 @@
         }
         self.activity.hidden = YES;
         [self.activity removeFromSuperview];
-
-
+        
+        
     }];
 }
 
@@ -104,7 +104,7 @@
         self.activity.hidden = NO;
         self.progressView.hidden = !isShow;
     }
-    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     if (dataArr.count) {
         //判断是图片还是视频
         if ([[dataArr[0] class] isSubclassOfClass:[NSString class]]) {
@@ -116,7 +116,7 @@
                         path = [Mp4Path componentsSeparatedByString:@"file://"].lastObject;
                     }
                     NSData *data = [NSData dataWithContentsOfFile:path];
-//                    NSURL *url = [NSURL URLWithString:Mp4Path];
+                    //                    NSURL *url = [NSURL URLWithString:Mp4Path];
                     NSString *fileName = [NSString stringWithFormat:@"%@ios.mp4",[self stringDateNowTime]];
                     [formData appendPartWithFileData:data
                                                 name:parameter
@@ -126,7 +126,7 @@
             } progress:^(NSProgress * _Nonnull uploadProgress) {
                 // 上传相关
                 double a = (double)uploadProgress.completedUnitCount*1.0/(double)uploadProgress.totalUnitCount;
-//                numberBlock(a);
+                //                numberBlock(a);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.progressView setProgress:a];
                 });
@@ -143,7 +143,7 @@
                 }
                 self.activity.hidden = YES;
                 [self.activity removeFromSuperview];
-
+                
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 if (error) {
                     NSLog(@"mp4上传请求出现错误------%@",error.description);
@@ -151,7 +151,7 @@
                 }
                 self.activity.hidden = YES;
                 [self.activity removeFromSuperview];
-
+                
             }];
         }else{
             //图片
@@ -168,9 +168,9 @@
                             image = [UIImage imageWithData:dataArr[i]];
                         }
                         
-//                        if (image.size.width > 1080 || image.size.height > 1080) {
-//                            image = [UIImage compressImage:image toTargetWidth:1080];
-//                        }
+                        //                        if (image.size.width > 1080 || image.size.height > 1080) {
+                        //                            image = [UIImage compressImage:image toTargetWidth:1080];
+                        //                        }
                         
                         
                         NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
@@ -187,7 +187,7 @@
                                                     fileName:fileName
                                                     mimeType:@"image/jpg"];
                         }
-
+                        
                     }
                 }
             } progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -209,7 +209,7 @@
                 }
                 self.activity.hidden = YES;
                 [self.activity removeFromSuperview];
-
+                
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
                 if (error) {
@@ -218,13 +218,12 @@
                 }
                 self.activity.hidden = YES;
                 [self.activity removeFromSuperview];
-
+                
             }];
         }
     }else{
         //普通
-        [self.sessionManager POST:urlStr parameters:dict constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        } progress:^(NSProgress * _Nonnull uploadProgress) {
+        [self.sessionManager POST:urlStr parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             // 请求成功返回的数据
             if (responseObject) {
@@ -238,15 +237,15 @@
             }
             self.activity.hidden = YES;
             [self.activity removeFromSuperview];
-
+            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             if (error) {
-                            NSLog(@"POST请求出现错误------%@",error.description);
+                NSLog(@"POST请求出现错误------%@",error.description);
                 errorBlock(error.description);
             }
             self.activity.hidden = YES;
             [self.activity removeFromSuperview];
-
+            
         }];
     }
 }
@@ -267,40 +266,21 @@
         self.activity.hidden = NO;
         self.progressView.hidden = !isShow;
     }
-    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:parameters];
-
-    [self.sessionManager POST:urlStr parameters:dict constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
+    
+    [self.sessionManager POST:urlStr parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 请求成功返回的数据
         if (responseObject) {
-            //                        NSLog(@"GET请求返回的数据为---------%@",responseObject);
+            //            successBlock(responseObject);
+            
+            NSLog(@"GET请求返回的数据为---------%@",responseObject);
             NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
             if ([NSJSONSerialization isValidJSONObject:jsonDict]) {
                 successBlock(jsonDict);
-
-//                if ([jsonDict[@"data"] isKindOfClass:[NSDictionary class]] && [[jsonDict[@"data"] allKeys] containsObject:@"session_token"]) {
-//                    NSMutableDictionary *dict = [NSMutableDictionary new];
-//                    for (NSString *key in [jsonDict allKeys]) {
-//                        if (![key isEqualToString:@"data"]) {
-//                            dict[key] = jsonDict[key];
-//                        }else{
-//                            for (NSString *subKey in [jsonDict[@"data"] allKeys]) {
-//                                if (![subKey isEqualToString:@"session_token"]) {
-//                                    dict[@"data"][key] = jsonDict[@"data"][key];
-//                                }
-//                            }
-//                        }
-//                    }
-//
-//                    [Utility saveUserInfoModel:jsonDict[@"data"]];
-//                    successBlock(dict);
-//                }else{
-//                    successBlock(jsonDict);
-//                }
             }
         } else {
             errorBlock(@"Post请求成功,未有数据!");
@@ -314,7 +294,7 @@
         }
         self.activity.hidden = YES;
         [self.activity removeFromSuperview];
-
+        
     }];
 }
 
@@ -352,6 +332,17 @@
 - (AFHTTPSessionManager *)sessionManager {
     if (!_sessionManager) {
         _sessionManager = [AFHTTPSessionManager manager];
+        
+        /*
+         AFHTTPResponseSerializer   返回格式data
+         AFJSONResponseSerializer   返回格式json
+         AFJSONRequestSerializer    请求格式json
+         AFHTTPRequestSerializer    请求格式data
+         
+         */
+        _sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
+        _sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        
         [_sessionManager.requestSerializer setTimeoutInterval:10.0];
     }
     return _sessionManager;
@@ -394,47 +385,47 @@
     
     
     /*
-    NSArray *typeStrings2G = @[CTRadioAccessTechnologyEdge,
-                               CTRadioAccessTechnologyGPRS,
-                               CTRadioAccessTechnologyCDMA1x];
-    
-    NSArray *typeStrings3G = @[CTRadioAccessTechnologyHSDPA,
-                               CTRadioAccessTechnologyWCDMA,
-                               CTRadioAccessTechnologyHSUPA,
-                               CTRadioAccessTechnologyCDMAEVDORev0,
-                               CTRadioAccessTechnologyCDMAEVDORevA,
-                               CTRadioAccessTechnologyCDMAEVDORevB,
-                               CTRadioAccessTechnologyeHRPD];
-    
-    NSArray *typeStrings4G = @[CTRadioAccessTechnologyLTE];
-    // 该 API 在 iOS7 以上系统才有效
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-        CTTelephonyNetworkInfo *teleInfo= [[CTTelephonyNetworkInfo alloc] init];
-        NSString *accessString = teleInfo.currentRadioAccessTechnology;
-        if ([typeStrings4G containsObject:accessString]) {
-            NSLog(@"4G网络");
-            return YES;
-        } else if ([typeStrings3G containsObject:accessString]) {
-            NSLog(@"3G网络");
-            return YES;
-            
-        } else if ([typeStrings2G containsObject:accessString]) {
-            NSLog(@"2G网络");
-            return YES;
-            
-        } else {
-            NSLog(@"未知网络");
-            return YES;
-            
-        }
-    } else {
-        NSLog(@"未知网络");
-        return NO;
-        
-    }
+     NSArray *typeStrings2G = @[CTRadioAccessTechnologyEdge,
+     CTRadioAccessTechnologyGPRS,
+     CTRadioAccessTechnologyCDMA1x];
+     
+     NSArray *typeStrings3G = @[CTRadioAccessTechnologyHSDPA,
+     CTRadioAccessTechnologyWCDMA,
+     CTRadioAccessTechnologyHSUPA,
+     CTRadioAccessTechnologyCDMAEVDORev0,
+     CTRadioAccessTechnologyCDMAEVDORevA,
+     CTRadioAccessTechnologyCDMAEVDORevB,
+     CTRadioAccessTechnologyeHRPD];
+     
+     NSArray *typeStrings4G = @[CTRadioAccessTechnologyLTE];
+     // 该 API 在 iOS7 以上系统才有效
+     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+     CTTelephonyNetworkInfo *teleInfo= [[CTTelephonyNetworkInfo alloc] init];
+     NSString *accessString = teleInfo.currentRadioAccessTechnology;
+     if ([typeStrings4G containsObject:accessString]) {
+     NSLog(@"4G网络");
+     return YES;
+     } else if ([typeStrings3G containsObject:accessString]) {
+     NSLog(@"3G网络");
+     return YES;
+     
+     } else if ([typeStrings2G containsObject:accessString]) {
+     NSLog(@"2G网络");
+     return YES;
+     
+     } else {
+     NSLog(@"未知网络");
+     return YES;
+     
+     }
+     } else {
+     NSLog(@"未知网络");
+     return NO;
+     
+     }
      */
     
-
+    
     UIApplication *app = [UIApplication sharedApplication];
     
     NSMutableArray *arr = [NSMutableArray new];
@@ -479,7 +470,7 @@
                 }
             }
         }
-        //根据状态选择12345678
+        //根据状态选择
     }
     if ([@[@"2G",@"3G",@"4G",@"wifi"] containsObject:state]) {
         return YES;
