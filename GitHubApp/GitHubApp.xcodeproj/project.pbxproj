@@ -31,6 +31,8 @@
 		52CF24C922091DA90070F786 /* MySettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C322091DA80070F786 /* MySettingModel.m */; };
 		52CF24CA22091DA90070F786 /* MySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C522091DA80070F786 /* MySettingCell.m */; };
 		52CF24CB22091DA90070F786 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CF24C622091DA80070F786 /* MyCell.xib */; };
+		52D391132227C41C00E09DC8 /* WebViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D391102227C41C00E09DC8 /* WebViewVC.xib */; };
+		52D391142227C41C00E09DC8 /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D391112227C41C00E09DC8 /* WebViewVC.m */; };
 		BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C3219D4A8700F02378 /* AppDelegate.m */; };
 		BB1420C7219D4A8700F02378 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1420C6219D4A8700F02378 /* ViewController.m */; };
 		BB1420CA219D4A8700F02378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1420C8219D4A8700F02378 /* Main.storyboard */; };
@@ -184,6 +186,9 @@
 		52CF24C522091DA80070F786 /* MySettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingCell.m; sourceTree = "<group>"; };
 		52CF24C622091DA80070F786 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		52CF24C722091DA90070F786 /* MySettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingModel.h; sourceTree = "<group>"; };
+		52D391102227C41C00E09DC8 /* WebViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewVC.xib; sourceTree = "<group>"; };
+		52D391112227C41C00E09DC8 /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		52D391122227C41C00E09DC8 /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
 		8B2C2B8D3DB0DE9A57B80617 /* Pods-GitHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.release.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.release.xcconfig"; sourceTree = "<group>"; };
 		8CBB2015463C6AF7CB1AA649 /* Pods-GitHubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubApp.debug.xcconfig"; path = "Target Support Files/Pods-GitHubApp/Pods-GitHubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1420BF219D4A8700F02378 /* GitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -500,6 +505,16 @@
 			path = MyCell;
 			sourceTree = "<group>";
 		};
+		52D3910F2227C41C00E09DC8 /* WebVC */ = {
+			isa = PBXGroup;
+			children = (
+				52D391102227C41C00E09DC8 /* WebViewVC.xib */,
+				52D391112227C41C00E09DC8 /* WebViewVC.m */,
+				52D391122227C41C00E09DC8 /* WebViewVC.h */,
+			);
+			path = WebVC;
+			sourceTree = "<group>";
+		};
 		BB1420B6219D4A8700F02378 = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +586,7 @@
 		BB1420E8219D4B3700F02378 /* MyVC */ = {
 			isa = PBXGroup;
 			children = (
+				52D3910F2227C41C00E09DC8 /* WebVC */,
 				BB1420E9219D4B3700F02378 /* LoginVC */,
 				BB1420F6219D4B3700F02378 /* AddImageAndMP4 */,
 			);
@@ -997,6 +1013,7 @@
 				BB142195219D4B3800F02378 /* playBtn.png in Resources */,
 				BB142187219D4B3800F02378 /* RegisterUserVC.xib in Resources */,
 				BB1421B3219D4B3800F02378 /* EillyerBaseCollectionViewCell.xib in Resources */,
+				52D391132227C41C00E09DC8 /* WebViewVC.xib in Resources */,
 				BB1420CF219D4A8900F02378 /* LaunchScreen.storyboard in Resources */,
 				BB14220D219D4E6B00F02378 /* PayChooseBtn.xib in Resources */,
 				525EA52C2212C1D700B56F4A /* AddressManagerCell.xib in Resources */,
@@ -1096,6 +1113,7 @@
 				BB142194219D4B3800F02378 /* AVURLAsset+SetMp4.m in Sources */,
 				BB1421B8219D4B3800F02378 /* BaseModel.m in Sources */,
 				BB14219E219D4B3800F02378 /* XSMediaPlayerMaskView.m in Sources */,
+				52D391142227C41C00E09DC8 /* WebViewVC.m in Sources */,
 				52CF24C922091DA90070F786 /* MySettingModel.m in Sources */,
 				BB1421D3219D4B3800F02378 /* LocationManager.m in Sources */,
 				BB1421A4219D4B3800F02378 /* UIColor+color.m in Sources */,

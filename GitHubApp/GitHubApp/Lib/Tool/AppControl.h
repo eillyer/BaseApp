@@ -53,4 +53,12 @@
                      text:(NSString *)text
                    Action:(void(^)(void))Action;
 
+
+
+/**
+ 拨打电话
+ 
+ @param mobile 电话号码
+ */
++ (void)callMobile:(NSString *)mobile;
 @end

@@ -83,6 +83,13 @@
     
 }
 
-
++ (void)callMobile:(NSString *)mobile{
+    NSString * string = [[NSString alloc] initWithFormat:@"tel:%@",mobile];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:string]]) {
+        //        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string] options:@{} completionHandler:^(BOOL success) {
+        //        }];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:string]];
+    }
+}
 
 @end
