@@ -80,4 +80,12 @@
  @return 字符串
  */
 + (NSString *)toStrWithMoney:(double)money;
+
+
+/**
+ 转double 去精度
+ 
+ @return 数值
+ */
+- (double)doubleValue2f;
 @end

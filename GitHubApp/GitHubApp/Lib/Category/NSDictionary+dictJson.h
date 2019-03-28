@@ -17,4 +17,12 @@
  @return 正常字典
  */
 - (NSDictionary *)deleteAllNullValue;
+
+
+/**
+ 字典转网络get字符串
+
+ @return 拼接的url
+ */
+- (NSString *)dictToGETNetWork;
 @end

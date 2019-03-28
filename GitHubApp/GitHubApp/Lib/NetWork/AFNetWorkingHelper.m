@@ -47,6 +47,13 @@
         [vc.view addSubview:self.activity];
         self.activity.hidden = NO;
     }
+    
+    [self.sessionManager.requestSerializer setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    [self.sessionManager.requestSerializer setValue:@"IOS" forHTTPHeaderField:@"HEADER-PLATFORM"];
+    
+    NSLog(@"%@",@"kUserInfo.token");
+    
+    
     // 设置返回请求数据类型一般的可以为JSON,XML与NSData类型
     //    AFHTTPResponseSerializer              NSData类型
     //    AFXMLParserResponseSerializer         XML类型
@@ -97,6 +104,8 @@
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:parameters];
     
     
+    [self.sessionManager.requestSerializer setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    [self.sessionManager.requestSerializer setValue:@"IOS" forHTTPHeaderField:@"HEADER-PLATFORM"];
     
     //小菊花
     if (vc) {
@@ -117,7 +126,7 @@
                     }
                     NSData *data = [NSData dataWithContentsOfFile:path];
                     //                    NSURL *url = [NSURL URLWithString:Mp4Path];
-                    NSString *fileName = [NSString stringWithFormat:@"%@ios.mp4",[self stringDateNowTime]];
+                    NSString *fileName = [NSString stringWithFormat:@"%@IOS.mp4",[self stringDateNowTime]];
                     [formData appendPartWithFileData:data
                                                 name:parameter
                                             fileName:fileName
@@ -267,9 +276,14 @@
         self.progressView.hidden = !isShow;
     }
     //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [self.sessionManager.requestSerializer setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    [self.sessionManager.requestSerializer setValue:@"IOS" forHTTPHeaderField:@"HEADER-PLATFORM"];
     
+//    NSLog(@"%@",@"kUserInfo.token");
     
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:parameters];
+    
+    
     
     [self.sessionManager POST:urlStr parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -277,7 +291,7 @@
         if (responseObject) {
             //            successBlock(responseObject);
             
-            NSLog(@"GET请求返回的数据为---------%@",responseObject);
+            //                                    NSLog(@"GET请求返回的数据为---------%@",responseObject);
             NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
             if ([NSJSONSerialization isValidJSONObject:jsonDict]) {
                 successBlock(jsonDict);
@@ -298,6 +312,125 @@
     }];
 }
 
+- (void)postDataBodyWithStringsOfURL:(NSString *)urlStr
+                              selfVC:(UIViewController *)vc
+                      isShowProgress:(BOOL)isShow
+                                Body:(NSDictionary *)Body
+                             success:(void(^)(NSDictionary *responseDict))successBlock
+                               error:(void(^)(NSString *error))errorBlock
+                              number:(void(^)(double number))numberBlock{
+    
+    if (![Body.allKeys containsObject:@"body"]) {
+        [AppControl showMessage:@"body错误" afterTime:kAlertTime];
+        return;
+    }
+    //小菊花
+    if (vc) {
+        [vc.view addSubview:self.activity];
+        self.activity.hidden = NO;
+        self.progressView.hidden = !isShow;
+    }
+    //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [self.sessionManager.requestSerializer setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    [self.sessionManager.requestSerializer setValue:@"IOS" forHTTPHeaderField:@"HEADER-PLATFORM"];
+    
+    
+    NSMutableURLRequest *request = [self.sessionManager.requestSerializer requestWithMethod:@"POST" URLString:urlStr parameters:nil error:nil];
+    
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    
+    [request setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    
+    
+    
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:Body[@"body"] options:0 error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    [request setHTTPBody:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [[self.sessionManager dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"POST请求出现错误------%@",error.description);
+            errorBlock(error.description);
+            self.activity.hidden = YES;
+            [self.activity removeFromSuperview];
+            
+            return;
+        }
+        
+        // 请求成功返回的数据
+        if (responseObject) {
+            
+            NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+            if ([NSJSONSerialization isValidJSONObject:jsonDict]) {
+                successBlock(jsonDict);
+            }
+        } else {
+            errorBlock(@"Post请求成功,未有数据!");
+        }
+        self.activity.hidden = YES;
+        [self.activity removeFromSuperview];
+    }] resume];
+}
+
+
+- (void)delegate:(NSString*)urlStr
+          selfVC:(UIViewController *)vc
+  isShowProgress:(BOOL)isShow
+      parameters:(NSDictionary *)parameters
+         success:(void(^)(NSDictionary *responseDict))successBlock
+           error:(void(^)(NSString *error))errorBlock
+          number:(void(^)(double number))numberBlock{
+    //小菊花
+    if (vc) {
+        [vc.view addSubview:self.activity];
+        self.activity.hidden = NO;
+        self.progressView.hidden = !isShow;
+    }
+    //    self.sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [self.sessionManager.requestSerializer setValue:@"kUserInfo.token" forHTTPHeaderField:@"X-With-Token"];
+    [self.sessionManager.requestSerializer setValue:@"IOS" forHTTPHeaderField:@"HEADER-PLATFORM"];
+    
+    
+    NSLog(@"%@",@"kUserInfo.token");
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:parameters];
+    
+    [self.sessionManager DELETE:urlStr parameters:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        // 请求成功返回的数据
+        if (responseObject) {
+            //            successBlock(responseObject);
+            
+            //                                    NSLog(@"GET请求返回的数据为---------%@",responseObject);
+            NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+            if ([NSJSONSerialization isValidJSONObject:jsonDict]) {
+                successBlock(jsonDict);
+            }
+        } else {
+            errorBlock(@"Post请求成功,未有数据!");
+        }
+        self.activity.hidden = YES;
+        [self.activity removeFromSuperview];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (error) {
+            NSLog(@"POST请求出现错误------%@",error.description);
+            errorBlock(error.description);
+        }
+        self.activity.hidden = YES;
+        [self.activity removeFromSuperview];
+        
+    }];
+    
+}
 
 
 #pragma mark -- 懒加载
@@ -332,14 +465,6 @@
 - (AFHTTPSessionManager *)sessionManager {
     if (!_sessionManager) {
         _sessionManager = [AFHTTPSessionManager manager];
-        
-        /*
-         AFHTTPResponseSerializer   返回格式data
-         AFJSONResponseSerializer   返回格式json
-         AFJSONRequestSerializer    请求格式json
-         AFHTTPRequestSerializer    请求格式data
-         
-         */
         _sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
         _sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
         
@@ -398,7 +523,7 @@
      CTRadioAccessTechnologyeHRPD];
      
      NSArray *typeStrings4G = @[CTRadioAccessTechnologyLTE];
-     // 该 API 在 iOS7 以上系统才有效
+     // 该 API 在 IOS7 以上系统才有效
      if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
      CTTelephonyNetworkInfo *teleInfo= [[CTTelephonyNetworkInfo alloc] init];
      NSString *accessString = teleInfo.currentRadioAccessTechnology;

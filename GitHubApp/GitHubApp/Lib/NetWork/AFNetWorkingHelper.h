@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
 // 单例
 + (instancetype)sharedAFNetworkingHelper;
 /**
-   get 请求
+ get 请求
  
  @param urlStr 服务器接口地址
  @param vc 当前控制器调用，有值为添加小菊花，无值时为不添加小菊花
@@ -35,7 +35,7 @@ typedef enum : NSUInteger {
 //通用上传
 /**
  通用上传
-
+ 
  @param urlStr 服务器接口地址
  @param vc 有值为添加小菊花，无值时为不添加小菊花
  @param isShow 是否显示进度条
@@ -64,5 +64,29 @@ typedef enum : NSUInteger {
                          success:(void(^)(NSDictionary *responseDict))successBlock
                            error:(void(^)(NSString *error))errorBlock
                           number:(void(^)(double number))numberBlock;
+
+
+/**
+ 参数为body
+ body = @{@"body":...}
+ 
+ */
+- (void)postDataBodyWithStringsOfURL:(NSString *)urlStr
+                              selfVC:(UIViewController *)vc
+                      isShowProgress:(BOOL)isShow
+                                Body:(NSDictionary *)Body
+                             success:(void(^)(NSDictionary *responseDict))successBlock
+                               error:(void(^)(NSString *error))errorBlock
+                              number:(void(^)(double number))numberBlock;
+
+
+- (void)delegate:(NSString*)urlStr
+          selfVC:(UIViewController *)vc
+  isShowProgress:(BOOL)isShow
+      parameters:(NSDictionary *)parameters
+         success:(void(^)(NSDictionary *responseDict))successBlock
+           error:(void(^)(NSString *error))errorBlock
+          number:(void(^)(double number))numberBlock;
+
 
 @end

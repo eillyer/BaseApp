@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface BaseModel : NSObject
+@property (nonatomic,strong) NSString * theId;
 
 @end

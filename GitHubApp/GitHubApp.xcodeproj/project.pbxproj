@@ -25,8 +25,9 @@
 		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
 		529376C221D36B1100174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BE21D36B1100174317 /* DatePickerView.m */; };
-		52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08C21C1038000DECCB3 /* FlipTableView.m */; };
-		52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B8F08F21C1038000DECCB3 /* SegmentTapView.m */; };
+		52CC431C224CDA26009A5825 /* TitleSelectBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431A224CDA26009A5825 /* TitleSelectBtn.m */; };
+		52CC431D224CDA26009A5825 /* TitleSelectBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */; };
+		52CC4321224CDAB3009A5825 /* YHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431E224CDAB3009A5825 /* YHSegmentView.m */; };
 		52CF24C822091DA90070F786 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C222091DA80070F786 /* MyCell.m */; };
 		52CF24C922091DA90070F786 /* MySettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C322091DA80070F786 /* MySettingModel.m */; };
 		52CF24CA22091DA90070F786 /* MySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CF24C522091DA80070F786 /* MySettingCell.m */; };
@@ -174,11 +175,12 @@
 		529376BD21D36B1100174317 /* DateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAlertView.xib; sourceTree = "<group>"; };
 		529376BE21D36B1100174317 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
 		529376BF21D36B1100174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
-		52B8F08B21C1038000DECCB3 /* FlipTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTableView.h; sourceTree = "<group>"; };
-		52B8F08C21C1038000DECCB3 /* FlipTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTableView.m; sourceTree = "<group>"; };
-		52B8F08E21C1038000DECCB3 /* SegmentTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTapView.h; sourceTree = "<group>"; };
-		52B8F08F21C1038000DECCB3 /* SegmentTapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentTapView.m; sourceTree = "<group>"; };
-		52B8F09221C103BE00DECCB3 /* ReadMeTitleChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadMeTitleChange.h; sourceTree = "<group>"; };
+		52CC4319224CDA25009A5825 /* TitleSelectBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleSelectBtn.h; sourceTree = "<group>"; };
+		52CC431A224CDA26009A5825 /* TitleSelectBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleSelectBtn.m; sourceTree = "<group>"; };
+		52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSelectBtn.xib; sourceTree = "<group>"; };
+		52CC431E224CDAB3009A5825 /* YHSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHSegmentView.m; sourceTree = "<group>"; };
+		52CC431F224CDAB3009A5825 /* YHSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSegmentView.h; sourceTree = "<group>"; };
+		52CC4320224CDAB3009A5825 /* YHSegmentViewConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHSegmentViewConstant.h; sourceTree = "<group>"; };
 		52CF24C122091DA80070F786 /* MySettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingCell.h; sourceTree = "<group>"; };
 		52CF24C222091DA80070F786 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		52CF24C322091DA80070F786 /* MySettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingModel.m; sourceTree = "<group>"; };
@@ -463,32 +465,17 @@
 			path = dataSelect;
 			sourceTree = "<group>";
 		};
-		52B8F08921C1034D00DECCB3 /* TitleChange */ = {
+		52CC4318224CDA03009A5825 /* TitleCelect */ = {
 			isa = PBXGroup;
 			children = (
-				52B8F09221C103BE00DECCB3 /* ReadMeTitleChange.h */,
-				52B8F08A21C1038000DECCB3 /* FlipTableView */,
-				52B8F08D21C1038000DECCB3 /* SegementTap */,
+				52CC431F224CDAB3009A5825 /* YHSegmentView.h */,
+				52CC431E224CDAB3009A5825 /* YHSegmentView.m */,
+				52CC4320224CDAB3009A5825 /* YHSegmentViewConstant.h */,
+				52CC4319224CDA25009A5825 /* TitleSelectBtn.h */,
+				52CC431A224CDA26009A5825 /* TitleSelectBtn.m */,
+				52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */,
 			);
-			path = TitleChange;
-			sourceTree = "<group>";
-		};
-		52B8F08A21C1038000DECCB3 /* FlipTableView */ = {
-			isa = PBXGroup;
-			children = (
-				52B8F08B21C1038000DECCB3 /* FlipTableView.h */,
-				52B8F08C21C1038000DECCB3 /* FlipTableView.m */,
-			);
-			path = FlipTableView;
-			sourceTree = "<group>";
-		};
-		52B8F08D21C1038000DECCB3 /* SegementTap */ = {
-			isa = PBXGroup;
-			children = (
-				52B8F08E21C1038000DECCB3 /* SegmentTapView.h */,
-				52B8F08F21C1038000DECCB3 /* SegmentTapView.m */,
-			);
-			path = SegementTap;
+			path = TitleCelect;
 			sourceTree = "<group>";
 		};
 		52CF24C022091D920070F786 /* MyCell */ = {
@@ -710,7 +697,6 @@
 		BB14212A219D4B3700F02378 /* BaseObject */ = {
 			isa = PBXGroup;
 			children = (
-				52B8F08921C1034D00DECCB3 /* TitleChange */,
 				BB1421E6219D4E6B00F02378 /* PayManager */,
 				BB14212B219D4B3700F02378 /* TableView */,
 				BB142132219D4B3700F02378 /* BaseAlertView */,
@@ -843,6 +829,7 @@
 		BB14217B219D4B3700F02378 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				52CC4318224CDA03009A5825 /* TitleCelect */,
 				525EA51D2212C1D700B56F4A /* AddressManager */,
 				52435E3F2211220600FABA56 /* QRCodeView */,
 				BB14217F219D4B3700F02378 /* citySelect */,
@@ -1024,6 +1011,7 @@
 				BB142206219D4E6B00F02378 /* 支付宝@3x.png in Resources */,
 				BB1421D6219D4B3800F02378 /* city.plist in Resources */,
 				BB142202219D4E6B00F02378 /* 钱包@3x.png in Resources */,
+				52CC431D224CDA26009A5825 /* TitleSelectBtn.xib in Resources */,
 				BB142201219D4E6B00F02378 /* 微信@2x.png in Resources */,
 				BB142192219D4B3800F02378 /* ImageAndMovEditCell.xib in Resources */,
 				525EA52A2212C1D700B56F4A /* AddAddressVC.xib in Resources */,
@@ -1146,7 +1134,7 @@
 				525EA52E2212C1D700B56F4A /* AddressManagerModel.m in Sources */,
 				BB14220E219D4E6B00F02378 /* PayManager.m in Sources */,
 				BB1421A2219D4B3800F02378 /* AddImageAndMp4VC.m in Sources */,
-				52B8F09121C1038000DECCB3 /* SegmentTapView.m in Sources */,
+				52CC4321224CDAB3009A5825 /* YHSegmentView.m in Sources */,
 				BB1421D5219D4B3800F02378 /* ZHDatePickerView.m in Sources */,
 				52435E4D2211220600FABA56 /* QRCodeView.m in Sources */,
 				BB1421AA219D4B3800F02378 /* NSArray+array.m in Sources */,
@@ -1174,7 +1162,7 @@
 				BB1421E1219D4CF100F02378 /* MMMM.m in Sources */,
 				BB1421BD219D4B3800F02378 /* EillyerTextField.m in Sources */,
 				BB142189219D4B3800F02378 /* RegisterUserVC.m in Sources */,
-				52B8F09021C1038000DECCB3 /* FlipTableView.m in Sources */,
+				52CC431C224CDA26009A5825 /* TitleSelectBtn.m in Sources */,
 				BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */,
 				BB1421B4219D4B3800F02378 /* ShareBtn.m in Sources */,
 			);

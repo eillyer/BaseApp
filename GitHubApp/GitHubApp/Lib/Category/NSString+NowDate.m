@@ -9,6 +9,20 @@
 #import "NSString+NowDate.h"
 
 @implementation NSString (NowDate)
+
+
+- (double)doubleValue2f{
+    
+    //    NSDecimalNumber   精确计算
+    if (self == nil || [self isEqualToString:@""]) {
+        return 0.0;
+    }
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    return [[formatter numberFromString:self] doubleValue];
+}
+
+
 + (instancetype)stringDateNow{
     
     NSDateFormatter *formatter = [NSDateFormatter new];

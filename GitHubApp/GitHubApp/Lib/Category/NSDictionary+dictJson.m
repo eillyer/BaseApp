@@ -98,6 +98,12 @@
  return props;
  }
  */
-
+- (NSString *)dictToGETNetWork{
+    NSMutableArray *arr = [NSMutableArray new];
+    for (NSString *key in self.allKeys) {
+        [arr addObject:[NSString stringWithFormat:@"%@=%@",key,self[key]]];
+    }
+    return [arr componentsJoinedByString:@"&"];
+}
 
 @end
