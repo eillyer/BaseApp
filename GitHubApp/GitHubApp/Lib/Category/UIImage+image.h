@@ -101,4 +101,12 @@ typedef NS_ENUM (NSUInteger,WatermarkPicturePositon) {
 + (UIImage *)addWatermarkWithBaseImage:(UIImage *)baseImage markImage:(UIImage *)markImage position:(WatermarkPicturePositon)position alpha:(float)alpha;
 
 
+/**
+ 图片灰化处理
+
+ @param sourceImage 需要处理的图片
+ @return 灰化后的图片
+ */
+- (UIImage *)grayImage:(UIImage *)sourceImage;
+
 @end

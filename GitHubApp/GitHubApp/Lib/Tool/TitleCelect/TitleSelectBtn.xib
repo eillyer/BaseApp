@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TitleSelectBtn">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-Vg-ux9">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="129"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoF-5c-Rqq">
+                            <rect key="frame" x="1" y="1" width="218" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tXP-ow-Kvg"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSn-DZ-fPl">
+                            <rect key="frame" x="0.0" y="128" width="220" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="f9X-WC-Dsk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OoF-5c-Rqq" firstAttribute="top" secondItem="SWU-Vg-ux9" secondAttribute="top" constant="1" id="7CD-eC-TfG"/>
+                        <constraint firstAttribute="bottom" secondItem="OoF-5c-Rqq" secondAttribute="bottom" id="Dzn-E9-u4H"/>
+                        <constraint firstItem="GSn-DZ-fPl" firstAttribute="leading" secondItem="SWU-Vg-ux9" secondAttribute="leading" id="Pao-uW-WH1"/>
+                        <constraint firstItem="OoF-5c-Rqq" firstAttribute="leading" secondItem="SWU-Vg-ux9" secondAttribute="leading" constant="1" id="PnP-uA-iS5"/>
+                        <constraint firstAttribute="trailing" secondItem="OoF-5c-Rqq" secondAttribute="trailing" constant="1" id="a75-vt-bXJ"/>
+                        <constraint firstAttribute="bottom" secondItem="GSn-DZ-fPl" secondAttribute="bottom" id="gn7-Z8-g2d"/>
+                        <constraint firstAttribute="trailing" secondItem="GSn-DZ-fPl" secondAttribute="trailing" id="zY1-As-NBx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SWU-Vg-ux9" secondAttribute="trailing" id="I9q-se-WBO"/>
+                <constraint firstItem="SWU-Vg-ux9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vfu-nY-qOZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SWU-Vg-ux9" secondAttribute="bottom" id="wIb-Lf-vNQ"/>
+                <constraint firstItem="SWU-Vg-ux9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yLf-yp-14K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="BGView" destination="SWU-Vg-ux9" id="pKx-td-h5U"/>
+                <outlet property="line" destination="GSn-DZ-fPl" id="6Nf-wa-O9A"/>
+                <outlet property="titleBtn" destination="OoF-5c-Rqq" id="dHr-Cd-5Aq"/>
+            </connections>
+            <point key="canvasLocation" x="-70.400000000000006" y="290.10494752623691"/>
+        </view>
+    </objects>
+</document>
