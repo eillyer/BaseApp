@@ -21,6 +21,7 @@
 		525EA52C2212C1D700B56F4A /* AddressManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525EA5242212C1D700B56F4A /* AddressManagerCell.xib */; };
 		525EA52D2212C1D700B56F4A /* AddAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA5252212C1D700B56F4A /* AddAddressVC.m */; };
 		525EA52E2212C1D700B56F4A /* AddressManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 525EA5262212C1D700B56F4A /* AddressManagerModel.m */; };
+		52622F60225DE4C300E6121D /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 52622F5F225DE4C200E6121D /* NullSafe.m */; };
 		5293766A21D220D900174317 /* MyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293766921D220D900174317 /* MyAnimation.m */; };
 		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
@@ -168,6 +169,7 @@
 		525EA5262212C1D700B56F4A /* AddressManagerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManagerModel.m; sourceTree = "<group>"; };
 		525EA5272212C1D700B56F4A /* AddressManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerCell.h; sourceTree = "<group>"; };
 		525EA5282212C1D700B56F4A /* AddressManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerVC.h; sourceTree = "<group>"; };
+		52622F5F225DE4C200E6121D /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
 		5293766821D220D900174317 /* MyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimation.h; sourceTree = "<group>"; };
 		5293766921D220D900174317 /* MyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimation.m; sourceTree = "<group>"; };
 		529376BB21D36B1100174317 /* DateAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAlertView.m; sourceTree = "<group>"; };
@@ -672,6 +674,7 @@
 		BB142119219D4B3700F02378 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				52622F5F225DE4C200E6121D /* NullSafe.m */,
 				BB142123219D4B3700F02378 /* NSString+NowDate.h */,
 				BB14211A219D4B3700F02378 /* NSString+NowDate.m */,
 				BB142126219D4B3700F02378 /* UIImage+image.h */,
@@ -1143,6 +1146,7 @@
 				BB1421A1219D4B3800F02378 /* CameraAlertController.m in Sources */,
 				BB1421AF219D4B3800F02378 /* BaseAlertView.m in Sources */,
 				BB1421AC219D4B3800F02378 /* EillyerBaseTableViewViewController.m in Sources */,
+				52622F60225DE4C300E6121D /* NullSafe.m in Sources */,
 				BB1421D2219D4B3800F02378 /* NetWorkTo.m in Sources */,
 				BB1421E2219D4CF100F02378 /* asdfasdf.m in Sources */,
 				BB14220A219D4E6B00F02378 /* PayAlertView.m in Sources */,
