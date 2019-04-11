@@ -13,7 +13,13 @@
 /*使用规则
  LocationManager *mag = [LocationManager sharedLocatiomManager];
  
- mag.sendValueBlock = ^(NSString *longitude, NSString *weidu, CLPlacemark *weizhi, BOOL isOK, NSString *erro) {};
+ mag.sendValueBlock = ^(NSString *longitude, NSString *weidu, CLPlacemark *weizhi, BOOL isOK, NSString *erro) {
+ 
+ if (isOK && erro == nil) {//定位成功
+ 
+ }else{
+ }
+ };
  
  [mag findMe];
  
