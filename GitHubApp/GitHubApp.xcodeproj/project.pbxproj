@@ -26,6 +26,7 @@
 		529376C021D36B1100174317 /* DateAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BB21D36B1100174317 /* DateAlertView.m */; };
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
 		529376C221D36B1100174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BE21D36B1100174317 /* DatePickerView.m */; };
+		52AE3E67227037CF00E1925A /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */; };
 		52CC431C224CDA26009A5825 /* TitleSelectBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431A224CDA26009A5825 /* TitleSelectBtn.m */; };
 		52CC431D224CDA26009A5825 /* TitleSelectBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */; };
 		52CC4321224CDAB3009A5825 /* YHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431E224CDAB3009A5825 /* YHSegmentView.m */; };
@@ -177,6 +178,8 @@
 		529376BD21D36B1100174317 /* DateAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateAlertView.xib; sourceTree = "<group>"; };
 		529376BE21D36B1100174317 /* DatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerView.m; sourceTree = "<group>"; };
 		529376BF21D36B1100174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
+		52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRWaterfallLayout.m; sourceTree = "<group>"; };
+		52AE3E66227037CF00E1925A /* XRWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRWaterfallLayout.h; sourceTree = "<group>"; };
 		52CC4319224CDA25009A5825 /* TitleSelectBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleSelectBtn.h; sourceTree = "<group>"; };
 		52CC431A224CDA26009A5825 /* TitleSelectBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleSelectBtn.m; sourceTree = "<group>"; };
 		52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSelectBtn.xib; sourceTree = "<group>"; };
@@ -739,6 +742,8 @@
 		BB142135219D4B3700F02378 /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
+				52AE3E66227037CF00E1925A /* XRWaterfallLayout.h */,
+				52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */,
 				BB142139219D4B3700F02378 /* EillyerBaseCollectionViewCell.h */,
 				BB142136219D4B3700F02378 /* EillyerBaseCollectionViewCell.m */,
 				BB14213C219D4B3700F02378 /* EillyerBaseCollectionViewCell.xib */,
@@ -1130,6 +1135,7 @@
 				BB1420D2219D4A8900F02378 /* main.m in Sources */,
 				5293766A21D220D900174317 /* MyAnimation.m in Sources */,
 				52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */,
+				52AE3E67227037CF00E1925A /* XRWaterfallLayout.m in Sources */,
 				525EA52B2212C1D700B56F4A /* AddressManagerCell.m in Sources */,
 				BB1421AB219D4B3800F02378 /* EillyerTableCell.m in Sources */,
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,

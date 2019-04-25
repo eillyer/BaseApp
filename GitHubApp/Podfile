@@ -20,6 +20,8 @@ pod 'MJExtension'
 pod 'HUPhotoBrowser', '~> 1.3.0'
 #pod 'RATreeView'
 #pod 'JSONModel'
+#pod 'BRPickerView' //日期，等各种选择器
+
 
 # 主模块(必须)
 #pod 'mob_sharesdk'
