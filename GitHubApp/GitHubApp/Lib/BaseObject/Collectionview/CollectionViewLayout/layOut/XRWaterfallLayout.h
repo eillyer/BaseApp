@@ -6,6 +6,18 @@
 //
 
 
+//瀑布流
+
+
+/*
+ XRWaterfallLayout *layout = [XRWaterfallLayout waterFallLayoutWithColumnCount:2];
+ layout.columnSpacing = 10;
+ layout.rowSpacing = 10;
+ layout.delegate = self;
+ [self.collectionView setCollectionViewLayout:layout animated:YES];
+ 
+ */
+
 #import <UIKit/UIKit.h>
 @class XRWaterfallLayout;
 

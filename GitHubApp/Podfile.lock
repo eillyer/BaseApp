@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BRPickerView (2.2.1)
   - HUPhotoBrowser (1.3.1):
     - SVProgressHUD
   - IQKeyboardManager (6.2.0)
@@ -29,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BRPickerView
   - HUPhotoBrowser (~> 1.3.0)
   - IQKeyboardManager
   - Masonry
@@ -40,6 +42,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BRPickerView
     - HUPhotoBrowser
     - IQKeyboardManager
     - Masonry
@@ -51,6 +54,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BRPickerView: 0590a8c5de9bd98c6b4e4f117a3dff6de287d5b2
   HUPhotoBrowser: 136b1830da6e3231c823f83e1ce8b2288add312a
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -60,6 +64,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 2140af5e02f833537105bfb2a1d8eaad2bcad287
+PODFILE CHECKSUM: 366d7377062adf425d2f66a61f61b2bda4e03cc6
 
 COCOAPODS: 1.6.0.beta.2

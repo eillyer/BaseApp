@@ -43,11 +43,11 @@ typedef NS_OPTIONS(NSInteger,anWeiYu) {
  @param successBlock successBlock description
  @param errorBlock errorBlock description
  */
-+ (void)toLoginUserVC:(UIViewController *)vc
-                     user:(NSString *)user
-                     pwd:(NSString *)pwd
-                   Success:(void(^)(NSDictionary *dict))successBlock
-                     error:(void(^)(NSString *error))errorBlock;
++ (void)toLoginUserVC:(nullable UIViewController *)vc
+                 user:(NSString *_Nonnull)user
+                  pwd:(NSString *_Nullable)pwd
+              Success:(void(^_Nullable)(NSDictionary * _Nullable dict))successBlock
+                error:(void(^_Nullable)(NSString * _Nullable error))errorBlock;
 
 /**
  用户注册获取验证码 [phone:电话号码]

@@ -27,6 +27,32 @@
 		529376C121D36B1100174317 /* DateAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529376BD21D36B1100174317 /* DateAlertView.xib */; };
 		529376C221D36B1100174317 /* DatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 529376BE21D36B1100174317 /* DatePickerView.m */; };
 		52AE3E67227037CF00E1925A /* XRWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */; };
+		52AE3E82227166C700E1925A /* NineBigSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E81227166C700E1925A /* NineBigSort.m */; };
+		52AE3E8522718ACD00E1925A /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E8422718ACD00E1925A /* HQCollectionViewFlowLayout.m */; };
+		52AE3EA5227193E500E1925A /* KYSCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E8C227193E500E1925A /* KYSCarouselCollectionViewLayout.m */; };
+		52AE3EA6227193E500E1925A /* KYSStackCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E8E227193E500E1925A /* KYSStackCollectionViewLayout.m */; };
+		52AE3EA7227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E91227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.m */; };
+		52AE3EA8227193E500E1925A /* KYSCircleCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E94227193E500E1925A /* KYSCircleCollectionViewLayout.m */; };
+		52AE3EA9227193E500E1925A /* KYSRotaryCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E95227193E500E1925A /* KYSRotaryCollectionViewLayout.m */; };
+		52AE3EAA227193E500E1925A /* KYSWaterFallCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E97227193E500E1925A /* KYSWaterFallCollectionViewLayout.m */; };
+		52AE3EAB227193E500E1925A /* KYSCoverFlowCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E9A227193E500E1925A /* KYSCoverFlowCollectionViewLayout.m */; };
+		52AE3EAC227193E500E1925A /* KYSLineCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E9C227193E500E1925A /* KYSLineCollectionViewLayout.m */; };
+		52AE3EAD227193E500E1925A /* KYSBaseCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3E9D227193E500E1925A /* KYSBaseCollectionViewLayout.m */; };
+		52AE3EAE227193E500E1925A /* KYSBaseCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3EA1227193E500E1925A /* KYSBaseCollectionViewFlowLayout.m */; };
+		52AE3EAF227193E500E1925A /* KYSLineCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3EA2227193E500E1925A /* KYSLineCollectionViewFlowLayout.m */; };
+		52AE3EB0227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AE3EA3227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.m */; };
+		52B408E62272F04D006FF02C /* clearColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B408E32272F04D006FF02C /* clearColor.png */; };
+		52B408E72272F04D006FF02C /* blackColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B408E42272F04D006FF02C /* blackColor.png */; };
+		52B408E82272F04D006FF02C /* waitColor.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B408E52272F04D006FF02C /* waitColor.png */; };
+		52BF72D122757BDB0086CA03 /* DCCycleScrollViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72C722757BDB0086CA03 /* DCCycleScrollViewFlowLayout.m */; };
+		52BF72D222757BDB0086CA03 /* DCCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72C822757BDB0086CA03 /* DCCycleScrollView.m */; };
+		52BF72D322757BDB0086CA03 /* DCCycleScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72C922757BDB0086CA03 /* DCCycleScrollViewCell.m */; };
+		52BF72D422757BDB0086CA03 /* MyBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72CC22757BDB0086CA03 /* MyBannerView.m */; };
+		52BF72D522757BDB0086CA03 /* MyBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72CD22757BDB0086CA03 /* MyBannerCell.m */; };
+		52BF72D622757BDB0086CA03 /* MyBannerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72CE22757BDB0086CA03 /* MyBannerFlowLayout.m */; };
+		52BF72FB227592E00086CA03 /* CitySelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF72F8227592E00086CA03 /* CitySelectVC.m */; };
+		52BF72FC227592E00086CA03 /* CitySelectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52BF72F9227592E00086CA03 /* CitySelectVC.xib */; };
+		52BF730622759E590086CA03 /* LocationBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF730522759E590086CA03 /* LocationBtn.m */; };
 		52CC431C224CDA26009A5825 /* TitleSelectBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431A224CDA26009A5825 /* TitleSelectBtn.m */; };
 		52CC431D224CDA26009A5825 /* TitleSelectBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */; };
 		52CC4321224CDAB3009A5825 /* YHSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC431E224CDAB3009A5825 /* YHSegmentView.m */; };
@@ -180,6 +206,54 @@
 		529376BF21D36B1100174317 /* DateAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAlertView.h; sourceTree = "<group>"; };
 		52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRWaterfallLayout.m; sourceTree = "<group>"; };
 		52AE3E66227037CF00E1925A /* XRWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRWaterfallLayout.h; sourceTree = "<group>"; };
+		52AE3E80227166C700E1925A /* NineBigSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineBigSort.h; sourceTree = "<group>"; };
+		52AE3E81227166C700E1925A /* NineBigSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineBigSort.m; sourceTree = "<group>"; };
+		52AE3E8322718ACD00E1925A /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		52AE3E8422718ACD00E1925A /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		52AE3E8C227193E500E1925A /* KYSCarouselCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSCarouselCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E8D227193E500E1925A /* KYSRotaryCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSRotaryCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E8E227193E500E1925A /* KYSStackCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSStackCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E8F227193E500E1925A /* KYSWaterFallCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSWaterFallCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E90227193E500E1925A /* KYSCoverFlowCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSCoverFlowCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E91227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSCarouselAutoCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E92227193E500E1925A /* KYSBaseCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSBaseCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E93227193E500E1925A /* KYSLineCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSLineCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E94227193E500E1925A /* KYSCircleCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSCircleCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E95227193E500E1925A /* KYSRotaryCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSRotaryCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E96227193E500E1925A /* KYSCarouselCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSCarouselCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E97227193E500E1925A /* KYSWaterFallCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSWaterFallCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E98227193E500E1925A /* KYSStackCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSStackCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E99227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSCarouselAutoCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E9A227193E500E1925A /* KYSCoverFlowCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSCoverFlowCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E9B227193E500E1925A /* KYSCircleCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSCircleCollectionViewLayout.h; sourceTree = "<group>"; };
+		52AE3E9C227193E500E1925A /* KYSLineCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSLineCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E9D227193E500E1925A /* KYSBaseCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSBaseCollectionViewLayout.m; sourceTree = "<group>"; };
+		52AE3E9F227193E500E1925A /* KYSLineCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSLineCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		52AE3EA0227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSAlignmentLeftCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		52AE3EA1227193E500E1925A /* KYSBaseCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSBaseCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		52AE3EA2227193E500E1925A /* KYSLineCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSLineCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		52AE3EA3227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYSAlignmentLeftCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		52AE3EA4227193E500E1925A /* KYSBaseCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYSBaseCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		52B408E32272F04D006FF02C /* clearColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearColor.png; sourceTree = "<group>"; };
+		52B408E42272F04D006FF02C /* blackColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackColor.png; sourceTree = "<group>"; };
+		52B408E52272F04D006FF02C /* waitColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waitColor.png; sourceTree = "<group>"; };
+		52BF72C422757BDB0086CA03 /* DCCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollView.h; sourceTree = "<group>"; };
+		52BF72C522757BDB0086CA03 /* DCCycleScrollViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollViewFlowLayout.h; sourceTree = "<group>"; };
+		52BF72C622757BDB0086CA03 /* DCCycleScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCycleScrollViewCell.h; sourceTree = "<group>"; };
+		52BF72C722757BDB0086CA03 /* DCCycleScrollViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollViewFlowLayout.m; sourceTree = "<group>"; };
+		52BF72C822757BDB0086CA03 /* DCCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollView.m; sourceTree = "<group>"; };
+		52BF72C922757BDB0086CA03 /* DCCycleScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCycleScrollViewCell.m; sourceTree = "<group>"; };
+		52BF72CB22757BDB0086CA03 /* MyBannerFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBannerFlowLayout.h; sourceTree = "<group>"; };
+		52BF72CC22757BDB0086CA03 /* MyBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBannerView.m; sourceTree = "<group>"; };
+		52BF72CD22757BDB0086CA03 /* MyBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBannerCell.m; sourceTree = "<group>"; };
+		52BF72CE22757BDB0086CA03 /* MyBannerFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBannerFlowLayout.m; sourceTree = "<group>"; };
+		52BF72CF22757BDB0086CA03 /* MyBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBannerView.h; sourceTree = "<group>"; };
+		52BF72D022757BDB0086CA03 /* MyBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBannerCell.h; sourceTree = "<group>"; };
+		52BF72F8227592E00086CA03 /* CitySelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySelectVC.m; sourceTree = "<group>"; };
+		52BF72F9227592E00086CA03 /* CitySelectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CitySelectVC.xib; sourceTree = "<group>"; };
+		52BF72FA227592E00086CA03 /* CitySelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySelectVC.h; sourceTree = "<group>"; };
+		52BF730422759E590086CA03 /* LocationBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBtn.h; sourceTree = "<group>"; };
+		52BF730522759E590086CA03 /* LocationBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBtn.m; sourceTree = "<group>"; };
 		52CC4319224CDA25009A5825 /* TitleSelectBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleSelectBtn.h; sourceTree = "<group>"; };
 		52CC431A224CDA26009A5825 /* TitleSelectBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleSelectBtn.m; sourceTree = "<group>"; };
 		52CC431B224CDA26009A5825 /* TitleSelectBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSelectBtn.xib; sourceTree = "<group>"; };
@@ -470,6 +544,105 @@
 			path = dataSelect;
 			sourceTree = "<group>";
 		};
+		52AE3E8A227193E500E1925A /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				52AE3E8B227193E500E1925A /* layOut */,
+				52AE3E9E227193E500E1925A /* flowLayout */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		52AE3E8B227193E500E1925A /* layOut */ = {
+			isa = PBXGroup;
+			children = (
+				52AE3E66227037CF00E1925A /* XRWaterfallLayout.h */,
+				52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */,
+				52AE3E8C227193E500E1925A /* KYSCarouselCollectionViewLayout.m */,
+				52AE3E8D227193E500E1925A /* KYSRotaryCollectionViewLayout.h */,
+				52AE3E8E227193E500E1925A /* KYSStackCollectionViewLayout.m */,
+				52AE3E8F227193E500E1925A /* KYSWaterFallCollectionViewLayout.h */,
+				52AE3E90227193E500E1925A /* KYSCoverFlowCollectionViewLayout.h */,
+				52AE3E91227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.m */,
+				52AE3E92227193E500E1925A /* KYSBaseCollectionViewLayout.h */,
+				52AE3E93227193E500E1925A /* KYSLineCollectionViewLayout.h */,
+				52AE3E94227193E500E1925A /* KYSCircleCollectionViewLayout.m */,
+				52AE3E95227193E500E1925A /* KYSRotaryCollectionViewLayout.m */,
+				52AE3E96227193E500E1925A /* KYSCarouselCollectionViewLayout.h */,
+				52AE3E97227193E500E1925A /* KYSWaterFallCollectionViewLayout.m */,
+				52AE3E98227193E500E1925A /* KYSStackCollectionViewLayout.h */,
+				52AE3E99227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.h */,
+				52AE3E9A227193E500E1925A /* KYSCoverFlowCollectionViewLayout.m */,
+				52AE3E9B227193E500E1925A /* KYSCircleCollectionViewLayout.h */,
+				52AE3E9C227193E500E1925A /* KYSLineCollectionViewLayout.m */,
+				52AE3E9D227193E500E1925A /* KYSBaseCollectionViewLayout.m */,
+			);
+			path = layOut;
+			sourceTree = "<group>";
+		};
+		52AE3E9E227193E500E1925A /* flowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				BB142138219D4B3700F02378 /* EillyerBaseFlowLayout.h */,
+				BB14213A219D4B3700F02378 /* EillyerBaseFlowLayout.m */,
+				52AE3E8322718ACD00E1925A /* HQCollectionViewFlowLayout.h */,
+				52AE3E8422718ACD00E1925A /* HQCollectionViewFlowLayout.m */,
+				52AE3E9F227193E500E1925A /* KYSLineCollectionViewFlowLayout.h */,
+				52AE3EA0227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.h */,
+				52AE3EA1227193E500E1925A /* KYSBaseCollectionViewFlowLayout.m */,
+				52AE3EA2227193E500E1925A /* KYSLineCollectionViewFlowLayout.m */,
+				52AE3EA3227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.m */,
+				52AE3EA4227193E500E1925A /* KYSBaseCollectionViewFlowLayout.h */,
+			);
+			path = flowLayout;
+			sourceTree = "<group>";
+		};
+		52BF72C322757BDB0086CA03 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				52BF72C422757BDB0086CA03 /* DCCycleScrollView.h */,
+				52BF72C522757BDB0086CA03 /* DCCycleScrollViewFlowLayout.h */,
+				52BF72C622757BDB0086CA03 /* DCCycleScrollViewCell.h */,
+				52BF72C722757BDB0086CA03 /* DCCycleScrollViewFlowLayout.m */,
+				52BF72C822757BDB0086CA03 /* DCCycleScrollView.m */,
+				52BF72C922757BDB0086CA03 /* DCCycleScrollViewCell.m */,
+				52BF72CA22757BDB0086CA03 /* MyBannerView */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		52BF72CA22757BDB0086CA03 /* MyBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				52BF72CB22757BDB0086CA03 /* MyBannerFlowLayout.h */,
+				52BF72CC22757BDB0086CA03 /* MyBannerView.m */,
+				52BF72CD22757BDB0086CA03 /* MyBannerCell.m */,
+				52BF72CE22757BDB0086CA03 /* MyBannerFlowLayout.m */,
+				52BF72CF22757BDB0086CA03 /* MyBannerView.h */,
+				52BF72D022757BDB0086CA03 /* MyBannerCell.h */,
+			);
+			path = MyBannerView;
+			sourceTree = "<group>";
+		};
+		52BF72F7227592E00086CA03 /* SBCP */ = {
+			isa = PBXGroup;
+			children = (
+				52BF72F8227592E00086CA03 /* CitySelectVC.m */,
+				52BF72F9227592E00086CA03 /* CitySelectVC.xib */,
+				52BF72FA227592E00086CA03 /* CitySelectVC.h */,
+			);
+			path = SBCP;
+			sourceTree = "<group>";
+		};
+		52BF730322759E590086CA03 /* locationBtn */ = {
+			isa = PBXGroup;
+			children = (
+				52BF730422759E590086CA03 /* LocationBtn.h */,
+				52BF730522759E590086CA03 /* LocationBtn.m */,
+			);
+			path = locationBtn;
+			sourceTree = "<group>";
+		};
 		52CC4318224CDA03009A5825 /* TitleCelect */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,6 +850,11 @@
 		BB142119219D4B3700F02378 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				52B408E42272F04D006FF02C /* blackColor.png */,
+				52B408E32272F04D006FF02C /* clearColor.png */,
+				52B408E52272F04D006FF02C /* waitColor.png */,
+				52AE3E80227166C700E1925A /* NineBigSort.h */,
+				52AE3E81227166C700E1925A /* NineBigSort.m */,
 				52622F5F225DE4C200E6121D /* NullSafe.m */,
 				BB142123219D4B3700F02378 /* NSString+NowDate.h */,
 				BB14211A219D4B3700F02378 /* NSString+NowDate.m */,
@@ -703,6 +881,8 @@
 		BB14212A219D4B3700F02378 /* BaseObject */ = {
 			isa = PBXGroup;
 			children = (
+				52BF730322759E590086CA03 /* locationBtn */,
+				52BF72C322757BDB0086CA03 /* Banner */,
 				BB1421E6219D4E6B00F02378 /* PayManager */,
 				BB14212B219D4B3700F02378 /* TableView */,
 				BB142132219D4B3700F02378 /* BaseAlertView */,
@@ -742,15 +922,12 @@
 		BB142135219D4B3700F02378 /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
-				52AE3E66227037CF00E1925A /* XRWaterfallLayout.h */,
-				52AE3E65227037CF00E1925A /* XRWaterfallLayout.m */,
+				52AE3E8A227193E500E1925A /* CollectionViewLayout */,
 				BB142139219D4B3700F02378 /* EillyerBaseCollectionViewCell.h */,
 				BB142136219D4B3700F02378 /* EillyerBaseCollectionViewCell.m */,
 				BB14213C219D4B3700F02378 /* EillyerBaseCollectionViewCell.xib */,
 				BB14213B219D4B3700F02378 /* EillyerBaseCollectionView.h */,
 				BB142137219D4B3700F02378 /* EillyerBaseCollectionView.m */,
-				BB142138219D4B3700F02378 /* EillyerBaseFlowLayout.h */,
-				BB14213A219D4B3700F02378 /* EillyerBaseFlowLayout.m */,
 			);
 			path = Collectionview;
 			sourceTree = "<group>";
@@ -853,6 +1030,7 @@
 		BB14217F219D4B3700F02378 /* citySelect */ = {
 			isa = PBXGroup;
 			children = (
+				52BF72F7227592E00086CA03 /* SBCP */,
 				BB142184219D4B3700F02378 /* LSCityChooseView.h */,
 				BB142180219D4B3700F02378 /* LSCityChooseView.m */,
 				BB142183219D4B3700F02378 /* ZHDatePickerView.h */,
@@ -1000,13 +1178,16 @@
 				BB1421AE219D4B3800F02378 /* noData@3x.png in Resources */,
 				BB142190219D4B3800F02378 /* add@3x.png in Resources */,
 				529376C121D36B1100174317 /* DateAlertView.xib in Resources */,
+				52B408E82272F04D006FF02C /* waitColor.png in Resources */,
 				BB14218E219D4B3800F02378 /* add@2x.png in Resources */,
 				BB14218C219D4B3800F02378 /* LoginVC.xib in Resources */,
 				BB142209219D4E6B00F02378 /* 选中@3x.png in Resources */,
 				BB14219D219D4B3800F02378 /* MediaPlayerVC.xib in Resources */,
 				BB142196219D4B3800F02378 /* kr-video-player-play@3x.png in Resources */,
+				52B408E72272F04D006FF02C /* blackColor.png in Resources */,
 				BB142195219D4B3800F02378 /* playBtn.png in Resources */,
 				BB142187219D4B3800F02378 /* RegisterUserVC.xib in Resources */,
+				52B408E62272F04D006FF02C /* clearColor.png in Resources */,
 				BB1421B3219D4B3800F02378 /* EillyerBaseCollectionViewCell.xib in Resources */,
 				52D391132227C41C00E09DC8 /* WebViewVC.xib in Resources */,
 				BB1420CF219D4A8900F02378 /* LaunchScreen.storyboard in Resources */,
@@ -1022,6 +1203,7 @@
 				52CC431D224CDA26009A5825 /* TitleSelectBtn.xib in Resources */,
 				BB142201219D4E6B00F02378 /* 微信@2x.png in Resources */,
 				BB142192219D4B3800F02378 /* ImageAndMovEditCell.xib in Resources */,
+				52BF72FC227592E00086CA03 /* CitySelectVC.xib in Resources */,
 				525EA52A2212C1D700B56F4A /* AddAddressVC.xib in Resources */,
 				BB142203219D4E6B00F02378 /* 钱包@2x.png in Resources */,
 				BB142199219D4B3800F02378 /* kr-video-player-pause@3x.png in Resources */,
@@ -1079,12 +1261,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GitHubApp/Pods-GitHubApp-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
@@ -1101,12 +1285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AE3EA5227193E500E1925A /* KYSCarouselCollectionViewLayout.m in Sources */,
 				BB1421A0219D4B3800F02378 /* XSMediaPlayer.m in Sources */,
 				BB1421BC219D4B3800F02378 /* UserInfoManager.m in Sources */,
 				BB1421A9219D4B3800F02378 /* NSDictionary+dictJson.m in Sources */,
 				529376C021D36B1100174317 /* DateAlertView.m in Sources */,
+				52BF730622759E590086CA03 /* LocationBtn.m in Sources */,
+				52BF72D222757BDB0086CA03 /* DCCycleScrollView.m in Sources */,
+				52AE3EAE227193E500E1925A /* KYSBaseCollectionViewFlowLayout.m in Sources */,
+				52BF72D622757BDB0086CA03 /* MyBannerFlowLayout.m in Sources */,
 				BB1421B9219D4B3800F02378 /* UserInfoModel.m in Sources */,
 				BB142194219D4B3800F02378 /* AVURLAsset+SetMp4.m in Sources */,
+				52AE3EA9227193E500E1925A /* KYSRotaryCollectionViewLayout.m in Sources */,
 				BB1421B8219D4B3800F02378 /* BaseModel.m in Sources */,
 				BB14219E219D4B3800F02378 /* XSMediaPlayerMaskView.m in Sources */,
 				52D391142227C41C00E09DC8 /* WebViewVC.m in Sources */,
@@ -1120,10 +1310,13 @@
 				BB1421B0219D4B3800F02378 /* EillyerBaseCollectionViewCell.m in Sources */,
 				BB1421B2219D4B3800F02378 /* EillyerBaseFlowLayout.m in Sources */,
 				BB1421D4219D4B3800F02378 /* LSCityChooseView.m in Sources */,
+				52BF72D522757BDB0086CA03 /* MyBannerCell.m in Sources */,
+				52AE3EAD227193E500E1925A /* KYSBaseCollectionViewLayout.m in Sources */,
 				52435E4A2211220600FABA56 /* WSLScanView.m in Sources */,
 				529376C221D36B1100174317 /* DatePickerView.m in Sources */,
 				BB1421BA219D4B3800F02378 /* KeyChainManager.m in Sources */,
 				BB1421CE219D4B3800F02378 /* MBProgressHUD.m in Sources */,
+				52AE3EA8227193E500E1925A /* KYSCircleCollectionViewLayout.m in Sources */,
 				BB1421A8219D4B3800F02378 /* NSString+extension.m in Sources */,
 				BB1421B7219D4B3800F02378 /* EliiyerBaseNavigationController.m in Sources */,
 				BB1420C7219D4A8700F02378 /* ViewController.m in Sources */,
@@ -1132,12 +1325,15 @@
 				BB142193219D4B3800F02378 /* ImageAndMovEditVC.m in Sources */,
 				BB1421D1219D4B3800F02378 /* AFNetWorkingHelper.m in Sources */,
 				BB1421B6219D4B3800F02378 /* EillyerBaseTabBarController.m in Sources */,
+				52AE3EA7227193E500E1925A /* KYSCarouselAutoCollectionViewLayout.m in Sources */,
 				BB1420D2219D4A8900F02378 /* main.m in Sources */,
 				5293766A21D220D900174317 /* MyAnimation.m in Sources */,
 				52435E4E2211220600FABA56 /* WSLNativeScanTool.m in Sources */,
+				52BF72FB227592E00086CA03 /* CitySelectVC.m in Sources */,
 				52AE3E67227037CF00E1925A /* XRWaterfallLayout.m in Sources */,
 				525EA52B2212C1D700B56F4A /* AddressManagerCell.m in Sources */,
 				BB1421AB219D4B3800F02378 /* EillyerTableCell.m in Sources */,
+				52AE3EB0227193E500E1925A /* KYSAlignmentLeftCollectionViewFlowLayout.m in Sources */,
 				BB1421A7219D4B3800F02378 /* UIView+layerView.m in Sources */,
 				525EA5292212C1D700B56F4A /* AddressManagerVC.m in Sources */,
 				525EA52E2212C1D700B56F4A /* AddressManagerModel.m in Sources */,
@@ -1145,18 +1341,27 @@
 				BB1421A2219D4B3800F02378 /* AddImageAndMp4VC.m in Sources */,
 				52CC4321224CDAB3009A5825 /* YHSegmentView.m in Sources */,
 				BB1421D5219D4B3800F02378 /* ZHDatePickerView.m in Sources */,
+				52AE3EAF227193E500E1925A /* KYSLineCollectionViewFlowLayout.m in Sources */,
+				52BF72D122757BDB0086CA03 /* DCCycleScrollViewFlowLayout.m in Sources */,
+				52AE3EA6227193E500E1925A /* KYSStackCollectionViewLayout.m in Sources */,
 				52435E4D2211220600FABA56 /* QRCodeView.m in Sources */,
 				BB1421AA219D4B3800F02378 /* NSArray+array.m in Sources */,
 				BB14218F219D4B3800F02378 /* ImageAndMovEditCellLayout.m in Sources */,
+				52AE3E82227166C700E1925A /* NineBigSort.m in Sources */,
 				BB1421CF219D4B3800F02378 /* NetWorkTemp.m in Sources */,
 				BB1421A1219D4B3800F02378 /* CameraAlertController.m in Sources */,
 				BB1421AF219D4B3800F02378 /* BaseAlertView.m in Sources */,
 				BB1421AC219D4B3800F02378 /* EillyerBaseTableViewViewController.m in Sources */,
 				52622F60225DE4C300E6121D /* NullSafe.m in Sources */,
+				52AE3E8522718ACD00E1925A /* HQCollectionViewFlowLayout.m in Sources */,
 				BB1421D2219D4B3800F02378 /* NetWorkTo.m in Sources */,
 				BB1421E2219D4CF100F02378 /* asdfasdf.m in Sources */,
+				52AE3EAA227193E500E1925A /* KYSWaterFallCollectionViewLayout.m in Sources */,
 				BB14220A219D4E6B00F02378 /* PayAlertView.m in Sources */,
 				BB14220B219D4E6B00F02378 /* PayChooseBtn.m in Sources */,
+				52BF72D322757BDB0086CA03 /* DCCycleScrollViewCell.m in Sources */,
+				52AE3EAC227193E500E1925A /* KYSLineCollectionViewLayout.m in Sources */,
+				52BF72D422757BDB0086CA03 /* MyBannerView.m in Sources */,
 				BB1421BB219D4B3800F02378 /* AccountTool.m in Sources */,
 				BB14219F219D4B3800F02378 /* MediaPlayerVC.m in Sources */,
 				BB1421D7219D4B3800F02378 /* AppControl.m in Sources */,
@@ -1175,6 +1380,7 @@
 				52CC431C224CDA26009A5825 /* TitleSelectBtn.m in Sources */,
 				BB1420C4219D4A8700F02378 /* AppDelegate.m in Sources */,
 				BB1421B4219D4B3800F02378 /* ShareBtn.m in Sources */,
+				52AE3EAB227193E500E1925A /* KYSCoverFlowCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

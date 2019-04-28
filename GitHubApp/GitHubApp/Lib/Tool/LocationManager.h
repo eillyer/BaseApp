@@ -27,7 +27,7 @@
 
 typedef void(^sendLocationValue)(NSString *longitude,NSString *latitude,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
 
-typedef void(^getLocationValue)(NSString *longitude,NSString *latitude,BOOL isOK,NSString *erro);
+typedef void(^getLocationValue)(NSString *longitude,NSString *latitude,CLPlacemark *weizhi,BOOL isOK,NSString *erro);
 
 @interface LocationManager : NSObject
 
@@ -44,7 +44,7 @@ typedef void(^getLocationValue)(NSString *longitude,NSString *latitude,BOOL isOK
 
 /**
  用地址来得到经纬度
-
+ 
  @param address 地址
  @param action 获得位置
  */

@@ -99,12 +99,12 @@
     CLGeocoder *geocoder=[[CLGeocoder alloc]init];
     [geocoder geocodeAddressString:address completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         if (error!=nil || placemarks.count==0) {
-            action(@"0",@"0",YES,@"编码信息错误");
+            action(@"0",@"0",nil,YES,@"编码信息错误");
         }
         //创建placemark对象
         CLPlacemark *placemark=[placemarks firstObject];
         //赋值经度
-        action([NSString stringWithFormat:@"%f",placemark.location.coordinate.longitude],[NSString stringWithFormat:@"%f",placemark.location.coordinate.latitude],NO,nil);
+        action([NSString stringWithFormat:@"%f",placemark.location.coordinate.longitude],[NSString stringWithFormat:@"%f",placemark.location.coordinate.latitude],placemark,NO,nil);
         
     }];
 }
