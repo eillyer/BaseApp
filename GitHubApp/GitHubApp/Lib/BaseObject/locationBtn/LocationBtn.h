@@ -11,6 +11,7 @@
 
 
 /*
+ 使用方法 ：
  [self.addressBtn loadLocationDefuleTitle:nil type:selectAlertCityType];
  
  self.addressBtn.LocationBtnBlock = ^(NSString *jingdu, NSString *weidu, CLPlacemark *weizhi, BOOL isOK, NSString *error) {
